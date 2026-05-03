@@ -1,3 +1,7 @@
 # 02 — Papers
 
-Paper summaries, reading notes, and citations tied to LLM inference anatomy. Add one file per paper or per theme as this section grows.
+Paper reading notes for Topic 01.
+
+| File | What it covers |
+|---|---|
+| [`reading-list.md`](./reading-list.md) | Annotated reading list — papers grouped by theme (Transformer, KV cache, FlashAttention, etc.), serving-focused summaries, and 🔴/🟡/🟢 reading priority. |
