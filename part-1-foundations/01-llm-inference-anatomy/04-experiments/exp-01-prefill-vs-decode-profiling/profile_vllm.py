@@ -80,7 +80,7 @@ def measure_with_offline_engine(
     llm = LLM(
         model=model,
         dtype="bfloat16",
-        gpu_memory_utilization=0.90,
+        gpu_memory_utilization=0.85,
         max_model_len=8192,
     )
 
