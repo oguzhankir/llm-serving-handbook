@@ -168,7 +168,7 @@ async def measure_streaming_async(
     engine_args = AsyncEngineArgs(
         model=model,
         dtype="bfloat16",
-        gpu_memory_utilization=0.85,
+        gpu_memory_utilization=0.90,
         max_model_len=8192,
     )
     engine = AsyncLLMEngine.from_engine_args(engine_args)

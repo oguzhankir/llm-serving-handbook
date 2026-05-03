@@ -1,3 +1,7 @@
 # 06 — Decision guides
 
-Practical guidance: when a technique matters, trade-offs, and common failure modes in production, grounded in the theory and measurements from the other folders in this topic.
+Decision guides for Topic 01.
+
+| File | What it covers |
+|---|---|
+| [`mental-models.md`](./mental-models.md) | Six mental models distilled from the theory notes — how to classify optimizations (prefill vs decode, compute vs memory, batching), plus quick-reference framing for metrics and techniques. |

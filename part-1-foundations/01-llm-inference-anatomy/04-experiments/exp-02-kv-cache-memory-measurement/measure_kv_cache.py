@@ -181,7 +181,7 @@ def main():
     model = AutoModelForCausalLM.from_pretrained(
         args.model,
         torch_dtype=torch.bfloat16,
-        device_map="auto",
+        device_map="cuda:0",
     )
     model.eval()
     torch.cuda.synchronize()

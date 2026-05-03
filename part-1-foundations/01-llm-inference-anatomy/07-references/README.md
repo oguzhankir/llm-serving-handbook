@@ -1,3 +1,5 @@
 # 07 — References
 
-Curated links, docs, talks, and external resources that did not fit in `02-papers/` or inline citations in theory notes.
+| File | What it covers |
+|---|---|
+| [`further-reading.md`](./further-reading.md) | Blog posts, talks, books, and interactive tools that complement the theory notes in this topic. |
