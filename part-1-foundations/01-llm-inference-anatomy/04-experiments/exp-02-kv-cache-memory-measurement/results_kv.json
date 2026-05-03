@@ -1,3628 +1,3628 @@
 {
   "model": "meta-llama/Llama-3.1-8B",
-  "model_weight_gb": 4.104258048,
+  "model_weight_gb": 16.06052352,
   "experiments": [
     {
       "model": "meta-llama/Llama-3.1-8B",
-      "hardware": "NVIDIA A100-SXM4-80GB",
+      "hardware": "NVIDIA A100-SXM4-40GB",
       "dtype": "bfloat16",
       "prompt_length": 65,
       "max_new_tokens": 128,
-      "model_weight_gb": 4.104258048,
+      "model_weight_gb": 16.06052352,
       "snapshots": [
         {
           "step": 0,
           "sequence_length": 66,
-          "allocated_gb": 4.155168256,
-          "reserved_gb": 5.234491392,
-          "kv_cache_gb": 0.05090815999999965
+          "allocated_gb": 16.07834112,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.017815552000001844
         },
         {
           "step": 1,
           "sequence_length": 67,
-          "allocated_gb": 4.122466816,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.01820672000000023
+          "allocated_gb": 16.078474752,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.01794918400000256
         },
         {
           "step": 2,
           "sequence_length": 68,
-          "allocated_gb": 4.122597888,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.01833779199999963
+          "allocated_gb": 16.078605824,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.01808025600000107
         },
         {
           "step": 3,
           "sequence_length": 69,
-          "allocated_gb": 4.12272896,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.018468863999999918
+          "allocated_gb": 16.078736896,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.018211327999999583
         },
         {
           "step": 4,
           "sequence_length": 70,
-          "allocated_gb": 4.122860032,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.018599936000000206
+          "allocated_gb": 16.078867968,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.018342400000001646
         },
         {
           "step": 5,
           "sequence_length": 71,
-          "allocated_gb": 4.122991104,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.018731007999999605
+          "allocated_gb": 16.07899904,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.018473472000000157
         },
         {
           "step": 6,
           "sequence_length": 72,
-          "allocated_gb": 4.123122176,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.018862079999999892
+          "allocated_gb": 16.079130112,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.01860454400000222
         },
         {
           "step": 7,
           "sequence_length": 73,
-          "allocated_gb": 4.123253248,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.01899315200000018
+          "allocated_gb": 16.079261184,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.018735616000000732
         },
         {
           "step": 8,
           "sequence_length": 74,
-          "allocated_gb": 4.12338432,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.019124224000000467
+          "allocated_gb": 16.079392256,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.018866687999999243
         },
         {
           "step": 9,
           "sequence_length": 75,
-          "allocated_gb": 4.123515392,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.019255295999999866
+          "allocated_gb": 16.079523328,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.018997760000001307
         },
         {
           "step": 10,
           "sequence_length": 76,
-          "allocated_gb": 4.123646464,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.019386368000000154
+          "allocated_gb": 16.0796544,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.019128831999999818
         },
         {
           "step": 11,
           "sequence_length": 77,
-          "allocated_gb": 4.123777536,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.01951744000000044
+          "allocated_gb": 16.079785472,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.019259904000001882
         },
         {
           "step": 12,
           "sequence_length": 78,
-          "allocated_gb": 4.123908608,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.01964851199999984
+          "allocated_gb": 16.079916544,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.019390976000000393
         },
         {
           "step": 13,
           "sequence_length": 79,
-          "allocated_gb": 4.12403968,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.019779584000000128
+          "allocated_gb": 16.080047616,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.019522048000002457
         },
         {
           "step": 14,
           "sequence_length": 80,
-          "allocated_gb": 4.124170752,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.019910656000000415
+          "allocated_gb": 16.080178688,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.019653120000000968
         },
         {
           "step": 15,
           "sequence_length": 81,
-          "allocated_gb": 4.124301824,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.020041727999999814
+          "allocated_gb": 16.08030976,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.01978419199999948
         },
         {
           "step": 16,
           "sequence_length": 82,
-          "allocated_gb": 4.124432896,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.020172800000000102
+          "allocated_gb": 16.080440832,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.019915264000001542
         },
         {
           "step": 17,
           "sequence_length": 83,
-          "allocated_gb": 4.124563968,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.02030387200000039
+          "allocated_gb": 16.080571904,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.020046336000000053
         },
         {
           "step": 18,
           "sequence_length": 84,
-          "allocated_gb": 4.12469504,
-          "reserved_gb": 5.219811328,
-          "kv_cache_gb": 0.02043494399999979
+          "allocated_gb": 16.080702976,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.020177408000002117
         },
         {
           "step": 19,
           "sequence_length": 85,
-          "allocated_gb": 4.124826112,
-          "reserved_gb": 5.22190848,
-          "kv_cache_gb": 0.020566016000000076
+          "allocated_gb": 16.080834048,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.020308480000000628
         },
         {
           "step": 20,
           "sequence_length": 86,
-          "allocated_gb": 4.124957184,
-          "reserved_gb": 5.22190848,
-          "kv_cache_gb": 0.020697088000000363
+          "allocated_gb": 16.08096512,
+          "reserved_gb": 16.097738752,
+          "kv_cache_gb": 0.02043955199999914
         },
         {
           "step": 21,
           "sequence_length": 87,
-          "allocated_gb": 4.125088256,
-          "reserved_gb": 5.22190848,
-          "kv_cache_gb": 0.020828159999999762
+          "allocated_gb": 16.081096192,
+          "reserved_gb": 16.099835904,
+          "kv_cache_gb": 0.020570624000001203
         },
         {
           "step": 22,
           "sequence_length": 88,
-          "allocated_gb": 4.125219328,
-          "reserved_gb": 5.22190848,
-          "kv_cache_gb": 0.02095923200000005
+          "allocated_gb": 16.081227264,
+          "reserved_gb": 16.099835904,
+          "kv_cache_gb": 0.020701695999999714
         },
         {
           "step": 23,
           "sequence_length": 89,
-          "allocated_gb": 4.1253504,
-          "reserved_gb": 5.22190848,
-          "kv_cache_gb": 0.021090304000000337
+          "allocated_gb": 16.081358336,
+          "reserved_gb": 16.099835904,
+          "kv_cache_gb": 0.020832768000001778
         },
         {
           "step": 24,
           "sequence_length": 90,
-          "allocated_gb": 4.125481472,
-          "reserved_gb": 5.22190848,
-          "kv_cache_gb": 0.021221375999999736
+          "allocated_gb": 16.081489408,
+          "reserved_gb": 16.099835904,
+          "kv_cache_gb": 0.02096384000000029
         },
         {
           "step": 25,
           "sequence_length": 91,
-          "allocated_gb": 4.125612544,
-          "reserved_gb": 5.22190848,
-          "kv_cache_gb": 0.021352448000000024
+          "allocated_gb": 16.08162048,
+          "reserved_gb": 16.099835904,
+          "kv_cache_gb": 0.021094912000002353
         },
         {
           "step": 26,
           "sequence_length": 92,
-          "allocated_gb": 4.125743616,
-          "reserved_gb": 5.22190848,
-          "kv_cache_gb": 0.02148352000000031
+          "allocated_gb": 16.081751552,
+          "reserved_gb": 16.099835904,
+          "kv_cache_gb": 0.021225984000000864
         },
         {
           "step": 27,
           "sequence_length": 93,
-          "allocated_gb": 4.125874688,
-          "reserved_gb": 5.22190848,
-          "kv_cache_gb": 0.02161459199999971
+          "allocated_gb": 16.081882624,
+          "reserved_gb": 16.099835904,
+          "kv_cache_gb": 0.021357055999999375
         },
         {
           "step": 28,
           "sequence_length": 94,
-          "allocated_gb": 4.12600576,
-          "reserved_gb": 5.22190848,
-          "kv_cache_gb": 0.021745663999999998
+          "allocated_gb": 16.082013696,
+          "reserved_gb": 16.099835904,
+          "kv_cache_gb": 0.02148812800000144
         },
         {
           "step": 29,
           "sequence_length": 95,
-          "allocated_gb": 4.126136832,
-          "reserved_gb": 5.22190848,
-          "kv_cache_gb": 0.021876736000000285
+          "allocated_gb": 16.082144768,
+          "reserved_gb": 16.099835904,
+          "kv_cache_gb": 0.02161919999999995
         },
         {
           "step": 30,
           "sequence_length": 96,
-          "allocated_gb": 4.126267904,
-          "reserved_gb": 5.22190848,
-          "kv_cache_gb": 0.022007807999999685
+          "allocated_gb": 16.08227584,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.021750272000002013
         },
         {
           "step": 31,
           "sequence_length": 97,
-          "allocated_gb": 4.126398976,
-          "reserved_gb": 5.22190848,
-          "kv_cache_gb": 0.022138879999999972
+          "allocated_gb": 16.082406912,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.021881344000000524
         },
         {
           "step": 32,
           "sequence_length": 98,
-          "allocated_gb": 4.126530048,
-          "reserved_gb": 5.22190848,
-          "kv_cache_gb": 0.02226995200000026
+          "allocated_gb": 16.082537984,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.022012415999999035
         },
         {
           "step": 33,
           "sequence_length": 99,
-          "allocated_gb": 4.12666112,
-          "reserved_gb": 5.224005632,
-          "kv_cache_gb": 0.02240102399999966
+          "allocated_gb": 16.082669056,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.0221434880000011
         },
         {
           "step": 34,
           "sequence_length": 100,
-          "allocated_gb": 4.126792192,
-          "reserved_gb": 5.224005632,
-          "kv_cache_gb": 0.022532095999999946
+          "allocated_gb": 16.082800128,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.02227455999999961
         },
         {
           "step": 35,
           "sequence_length": 101,
-          "allocated_gb": 4.126923264,
-          "reserved_gb": 5.224005632,
-          "kv_cache_gb": 0.022663168000000233
+          "allocated_gb": 16.0829312,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.022405632000001674
         },
         {
           "step": 36,
           "sequence_length": 102,
-          "allocated_gb": 4.127054336,
-          "reserved_gb": 5.224005632,
-          "kv_cache_gb": 0.022794239999999633
+          "allocated_gb": 16.083062272,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.022536704000000185
         },
         {
           "step": 37,
           "sequence_length": 103,
-          "allocated_gb": 4.127185408,
-          "reserved_gb": 5.224005632,
-          "kv_cache_gb": 0.02292531199999992
+          "allocated_gb": 16.083193344,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.02266777600000225
         },
         {
           "step": 38,
           "sequence_length": 104,
-          "allocated_gb": 4.12731648,
-          "reserved_gb": 5.224005632,
-          "kv_cache_gb": 0.023056384000000207
+          "allocated_gb": 16.083324416,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.02279884800000076
         },
         {
           "step": 39,
           "sequence_length": 105,
-          "allocated_gb": 4.127447552,
-          "reserved_gb": 5.224005632,
-          "kv_cache_gb": 0.023187455999999607
+          "allocated_gb": 16.083455488,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.02292991999999927
         },
         {
           "step": 40,
           "sequence_length": 106,
-          "allocated_gb": 4.127578624,
-          "reserved_gb": 5.224005632,
-          "kv_cache_gb": 0.023318527999999894
+          "allocated_gb": 16.08358656,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.023060992000001335
         },
         {
           "step": 41,
           "sequence_length": 107,
-          "allocated_gb": 4.127709696,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.02344960000000018
+          "allocated_gb": 16.083717632,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.023192063999999846
         },
         {
           "step": 42,
           "sequence_length": 108,
-          "allocated_gb": 4.127840768,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.02358067200000047
+          "allocated_gb": 16.083848704,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.02332313600000191
         },
         {
           "step": 43,
           "sequence_length": 109,
-          "allocated_gb": 4.12797184,
-          "reserved_gb": 5.224005632,
-          "kv_cache_gb": 0.023711743999999868
+          "allocated_gb": 16.083979776,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.02345420800000042
         },
         {
           "step": 44,
           "sequence_length": 110,
-          "allocated_gb": 4.128102912,
-          "reserved_gb": 5.224005632,
-          "kv_cache_gb": 0.023842816000000155
+          "allocated_gb": 16.084110848,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.023585280000002484
         },
         {
           "step": 45,
           "sequence_length": 111,
-          "allocated_gb": 4.128233984,
-          "reserved_gb": 5.224005632,
-          "kv_cache_gb": 0.023973888000000443
+          "allocated_gb": 16.08424192,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.023716352000000995
         },
         {
           "step": 46,
           "sequence_length": 112,
-          "allocated_gb": 4.128365056,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.024104959999999842
+          "allocated_gb": 16.084372992,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.023847423999999506
         },
         {
           "step": 47,
           "sequence_length": 113,
-          "allocated_gb": 4.128496128,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.02423603200000013
+          "allocated_gb": 16.084504064,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.02397849600000157
         },
         {
           "step": 48,
           "sequence_length": 114,
-          "allocated_gb": 4.1286272,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.024367104000000417
+          "allocated_gb": 16.084635136,
+          "reserved_gb": 16.101933056,
+          "kv_cache_gb": 0.02410956800000008
         },
         {
           "step": 49,
           "sequence_length": 115,
-          "allocated_gb": 4.128758272,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.024498175999999816
+          "allocated_gb": 16.084766208,
+          "reserved_gb": 16.104030208,
+          "kv_cache_gb": 0.024240640000002145
         },
         {
           "step": 50,
           "sequence_length": 116,
-          "allocated_gb": 4.128889344,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.024629248000000104
+          "allocated_gb": 16.08489728,
+          "reserved_gb": 16.104030208,
+          "kv_cache_gb": 0.024371712000000656
         },
         {
           "step": 51,
           "sequence_length": 117,
-          "allocated_gb": 4.129020416,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.02476032000000039
+          "allocated_gb": 16.085028352,
+          "reserved_gb": 16.104030208,
+          "kv_cache_gb": 0.024502783999999167
         },
         {
           "step": 52,
           "sequence_length": 118,
-          "allocated_gb": 4.129151488,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.02489139199999979
+          "allocated_gb": 16.085159424,
+          "reserved_gb": 16.104030208,
+          "kv_cache_gb": 0.02463385600000123
         },
         {
           "step": 53,
           "sequence_length": 119,
-          "allocated_gb": 4.12928256,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.025022464000000078
+          "allocated_gb": 16.085290496,
+          "reserved_gb": 16.104030208,
+          "kv_cache_gb": 0.024764927999999742
         },
         {
           "step": 54,
           "sequence_length": 120,
-          "allocated_gb": 4.129413632,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.025153536000000365
+          "allocated_gb": 16.085421568,
+          "reserved_gb": 16.104030208,
+          "kv_cache_gb": 0.024896000000001806
         },
         {
           "step": 55,
           "sequence_length": 121,
-          "allocated_gb": 4.129544704,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.025284607999999764
+          "allocated_gb": 16.08555264,
+          "reserved_gb": 16.104030208,
+          "kv_cache_gb": 0.025027072000000317
         },
         {
           "step": 56,
           "sequence_length": 122,
-          "allocated_gb": 4.129675776,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.02541568000000005
+          "allocated_gb": 16.085683712,
+          "reserved_gb": 16.104030208,
+          "kv_cache_gb": 0.02515814400000238
         },
         {
           "step": 57,
           "sequence_length": 123,
-          "allocated_gb": 4.129806848,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.02554675200000034
+          "allocated_gb": 16.085814784,
+          "reserved_gb": 16.104030208,
+          "kv_cache_gb": 0.02528921600000089
         },
         {
           "step": 58,
           "sequence_length": 124,
-          "allocated_gb": 4.12993792,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.025677823999999738
+          "allocated_gb": 16.085945856,
+          "reserved_gb": 16.104030208,
+          "kv_cache_gb": 0.025420287999999402
         },
         {
           "step": 59,
           "sequence_length": 125,
-          "allocated_gb": 4.130068992,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.025808896000000026
+          "allocated_gb": 16.086076928,
+          "reserved_gb": 16.104030208,
+          "kv_cache_gb": 0.025551360000001466
         },
         {
           "step": 60,
           "sequence_length": 126,
-          "allocated_gb": 4.130200064,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.025939968000000313
+          "allocated_gb": 16.086208,
+          "reserved_gb": 16.10612736,
+          "kv_cache_gb": 0.025682431999999977
         },
         {
           "step": 61,
           "sequence_length": 127,
-          "allocated_gb": 4.130331136,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.026071039999999712
+          "allocated_gb": 16.086339072,
+          "reserved_gb": 16.10612736,
+          "kv_cache_gb": 0.02581350400000204
         },
         {
           "step": 62,
           "sequence_length": 128,
-          "allocated_gb": 4.130462208,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.026202112
+          "allocated_gb": 16.086470144,
+          "reserved_gb": 16.10612736,
+          "kv_cache_gb": 0.025944576000000552
         },
         {
           "step": 63,
           "sequence_length": 129,
-          "allocated_gb": 4.130594304,
-          "reserved_gb": 5.226102784,
-          "kv_cache_gb": 0.026334207999999748
+          "allocated_gb": 16.086602752,
+          "reserved_gb": 16.10612736,
+          "kv_cache_gb": 0.026077184000001807
         },
         {
           "step": 64,
           "sequence_length": 130,
-          "allocated_gb": 4.130725888,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.026465791999999766
+          "allocated_gb": 16.086734336,
+          "reserved_gb": 16.10612736,
+          "kv_cache_gb": 0.02620876800000005
         },
         {
           "step": 65,
           "sequence_length": 131,
-          "allocated_gb": 4.13085696,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.026596864000000053
+          "allocated_gb": 16.086865408,
+          "reserved_gb": 16.10612736,
+          "kv_cache_gb": 0.026339840000002113
         },
         {
           "step": 66,
           "sequence_length": 132,
-          "allocated_gb": 4.130988032,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.02672793600000034
+          "allocated_gb": 16.08699648,
+          "reserved_gb": 16.10612736,
+          "kv_cache_gb": 0.026470912000000624
         },
         {
           "step": 67,
           "sequence_length": 133,
-          "allocated_gb": 4.131119104,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.02685900799999974
+          "allocated_gb": 16.087127552,
+          "reserved_gb": 16.10612736,
+          "kv_cache_gb": 0.026601983999999135
         },
         {
           "step": 68,
           "sequence_length": 134,
-          "allocated_gb": 4.131250176,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.026990080000000027
+          "allocated_gb": 16.087258624,
+          "reserved_gb": 16.10612736,
+          "kv_cache_gb": 0.0267330560000012
         },
         {
           "step": 69,
           "sequence_length": 135,
-          "allocated_gb": 4.131381248,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.027121152000000315
+          "allocated_gb": 16.087389696,
+          "reserved_gb": 16.10612736,
+          "kv_cache_gb": 0.02686412799999971
         },
         {
           "step": 70,
           "sequence_length": 136,
-          "allocated_gb": 4.13151232,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.027252223999999714
+          "allocated_gb": 16.087520768,
+          "reserved_gb": 16.10612736,
+          "kv_cache_gb": 0.026995200000001773
         },
         {
           "step": 71,
           "sequence_length": 137,
-          "allocated_gb": 4.131643392,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.027383296
+          "allocated_gb": 16.08765184,
+          "reserved_gb": 16.108224512,
+          "kv_cache_gb": 0.027126272000000284
         },
         {
           "step": 72,
           "sequence_length": 138,
-          "allocated_gb": 4.131774464,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.02751436800000029
+          "allocated_gb": 16.087782912,
+          "reserved_gb": 16.108224512,
+          "kv_cache_gb": 0.027257344000002348
         },
         {
           "step": 73,
           "sequence_length": 139,
-          "allocated_gb": 4.131905536,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.027645439999999688
+          "allocated_gb": 16.087913984,
+          "reserved_gb": 16.108224512,
+          "kv_cache_gb": 0.02738841600000086
         },
         {
           "step": 74,
           "sequence_length": 140,
-          "allocated_gb": 4.132036608,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.027776511999999975
+          "allocated_gb": 16.088045056,
+          "reserved_gb": 16.108224512,
+          "kv_cache_gb": 0.02751948799999937
         },
         {
           "step": 75,
           "sequence_length": 141,
-          "allocated_gb": 4.13216768,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.027907584000000263
+          "allocated_gb": 16.088176128,
+          "reserved_gb": 16.108224512,
+          "kv_cache_gb": 0.027650560000001434
         },
         {
           "step": 76,
           "sequence_length": 142,
-          "allocated_gb": 4.132298752,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.028038655999999662
+          "allocated_gb": 16.0883072,
+          "reserved_gb": 16.108224512,
+          "kv_cache_gb": 0.027781631999999945
         },
         {
           "step": 77,
           "sequence_length": 143,
-          "allocated_gb": 4.132429824,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.02816972799999995
+          "allocated_gb": 16.088438272,
+          "reserved_gb": 16.108224512,
+          "kv_cache_gb": 0.02791270400000201
         },
         {
           "step": 78,
           "sequence_length": 144,
-          "allocated_gb": 4.132560896,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.028300800000000237
+          "allocated_gb": 16.088569344,
+          "reserved_gb": 16.108224512,
+          "kv_cache_gb": 0.02804377600000052
         },
         {
           "step": 79,
           "sequence_length": 145,
-          "allocated_gb": 4.132691968,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.028431871999999636
+          "allocated_gb": 16.088700416,
+          "reserved_gb": 16.108224512,
+          "kv_cache_gb": 0.02817484799999903
         },
         {
           "step": 80,
           "sequence_length": 146,
-          "allocated_gb": 4.13282304,
-          "reserved_gb": 5.228199936,
-          "kv_cache_gb": 0.028562943999999924
+          "allocated_gb": 16.088831488,
+          "reserved_gb": 16.108224512,
+          "kv_cache_gb": 0.028305920000001095
         },
         {
           "step": 81,
           "sequence_length": 147,
-          "allocated_gb": 4.132954112,
-          "reserved_gb": 5.230297088,
-          "kv_cache_gb": 0.02869401600000021
+          "allocated_gb": 16.08896256,
+          "reserved_gb": 16.108224512,
+          "kv_cache_gb": 0.028436991999999606
         },
         {
           "step": 82,
           "sequence_length": 148,
-          "allocated_gb": 4.133085184,
-          "reserved_gb": 5.230297088,
-          "kv_cache_gb": 0.02882508799999961
+          "allocated_gb": 16.089093632,
+          "reserved_gb": 16.108224512,
+          "kv_cache_gb": 0.02856806400000167
         },
         {
           "step": 83,
           "sequence_length": 149,
-          "allocated_gb": 4.133216256,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.028956159999999898
+          "allocated_gb": 16.089224704,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.02869913600000018
         },
         {
           "step": 84,
           "sequence_length": 150,
-          "allocated_gb": 4.133347328,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.029087232000000185
+          "allocated_gb": 16.089355776,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.028830208000002244
         },
         {
           "step": 85,
           "sequence_length": 151,
-          "allocated_gb": 4.1334784,
-          "reserved_gb": 5.230297088,
-          "kv_cache_gb": 0.029218304000000472
+          "allocated_gb": 16.089486848,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.028961280000000755
         },
         {
           "step": 86,
           "sequence_length": 152,
-          "allocated_gb": 4.133609472,
-          "reserved_gb": 5.230297088,
-          "kv_cache_gb": 0.02934937599999987
+          "allocated_gb": 16.08961792,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.029092351999999266
         },
         {
           "step": 87,
           "sequence_length": 153,
-          "allocated_gb": 4.133740544,
-          "reserved_gb": 5.230297088,
-          "kv_cache_gb": 0.02948044800000016
+          "allocated_gb": 16.089748992,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.02922342400000133
         },
         {
           "step": 88,
           "sequence_length": 154,
-          "allocated_gb": 4.133871616,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.029611520000000446
+          "allocated_gb": 16.089880064,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.02935449599999984
         },
         {
           "step": 89,
           "sequence_length": 155,
-          "allocated_gb": 4.134002688,
-          "reserved_gb": 5.230297088,
-          "kv_cache_gb": 0.029742591999999846
+          "allocated_gb": 16.090011136,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.029485568000001905
         },
         {
           "step": 90,
           "sequence_length": 156,
-          "allocated_gb": 4.13413376,
-          "reserved_gb": 5.230297088,
-          "kv_cache_gb": 0.029873664000000133
+          "allocated_gb": 16.090142208,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.029616640000000416
         },
         {
           "step": 91,
           "sequence_length": 157,
-          "allocated_gb": 4.134264832,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.03000473600000042
+          "allocated_gb": 16.09027328,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.02974771200000248
         },
         {
           "step": 92,
           "sequence_length": 158,
-          "allocated_gb": 4.134395904,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.03013580799999982
+          "allocated_gb": 16.090404352,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.02987878400000099
         },
         {
           "step": 93,
           "sequence_length": 159,
-          "allocated_gb": 4.134526976,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.030266880000000107
+          "allocated_gb": 16.090535424,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.030009855999999502
         },
         {
           "step": 94,
           "sequence_length": 160,
-          "allocated_gb": 4.134658048,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.030397952000000394
+          "allocated_gb": 16.090666496,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.030140928000001566
         },
         {
           "step": 95,
           "sequence_length": 161,
-          "allocated_gb": 4.13478912,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.030529023999999794
+          "allocated_gb": 16.090797568,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.030272000000000077
         },
         {
           "step": 96,
           "sequence_length": 162,
-          "allocated_gb": 4.134920192,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.03066009600000008
+          "allocated_gb": 16.09092864,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.03040307200000214
         },
         {
           "step": 97,
           "sequence_length": 163,
-          "allocated_gb": 4.135051264,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.03079116800000037
+          "allocated_gb": 16.091059712,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.03053414400000065
         },
         {
           "step": 98,
           "sequence_length": 164,
-          "allocated_gb": 4.135182336,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.030922239999999768
+          "allocated_gb": 16.091190784,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.030665215999999162
         },
         {
           "step": 99,
           "sequence_length": 165,
-          "allocated_gb": 4.135313408,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.031053312000000055
+          "allocated_gb": 16.091321856,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.030796288000001226
         },
         {
           "step": 100,
           "sequence_length": 166,
-          "allocated_gb": 4.13544448,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.031184384000000342
+          "allocated_gb": 16.091452928,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.030927359999999737
         },
         {
           "step": 101,
           "sequence_length": 167,
-          "allocated_gb": 4.135575552,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.03131545599999974
+          "allocated_gb": 16.091584,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.0310584320000018
         },
         {
           "step": 102,
           "sequence_length": 168,
-          "allocated_gb": 4.135706624,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.03144652800000003
+          "allocated_gb": 16.091715072,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.031189504000000312
         },
         {
           "step": 103,
           "sequence_length": 169,
-          "allocated_gb": 4.135837696,
-          "reserved_gb": 5.23239424,
-          "kv_cache_gb": 0.031577600000000317
+          "allocated_gb": 16.091846144,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.031320576000002376
         },
         {
           "step": 104,
           "sequence_length": 170,
-          "allocated_gb": 4.135968768,
-          "reserved_gb": 5.230297088,
-          "kv_cache_gb": 0.031708671999999716
+          "allocated_gb": 16.091977216,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.03145164800000089
         },
         {
           "step": 105,
           "sequence_length": 171,
-          "allocated_gb": 4.13609984,
-          "reserved_gb": 5.230297088,
-          "kv_cache_gb": 0.031839744
+          "allocated_gb": 16.092108288,
+          "reserved_gb": 16.110321664,
+          "kv_cache_gb": 0.0315827199999994
         },
         {
           "step": 106,
           "sequence_length": 172,
-          "allocated_gb": 4.136230912,
-          "reserved_gb": 5.234491392,
-          "kv_cache_gb": 0.03197081600000029
+          "allocated_gb": 16.09223936,
+          "reserved_gb": 16.112418816,
+          "kv_cache_gb": 0.03171379200000146
         },
         {
           "step": 107,
           "sequence_length": 173,
-          "allocated_gb": 4.136361984,
-          "reserved_gb": 5.234491392,
-          "kv_cache_gb": 0.03210188799999969
+          "allocated_gb": 16.092370432,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03184486399999997
         },
         {
           "step": 108,
           "sequence_length": 174,
-          "allocated_gb": 4.136493056,
-          "reserved_gb": 5.234491392,
-          "kv_cache_gb": 0.03223295999999998
+          "allocated_gb": 16.092501504,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.031975936000002037
         },
         {
           "step": 109,
           "sequence_length": 175,
-          "allocated_gb": 4.136624128,
-          "reserved_gb": 5.236588544,
-          "kv_cache_gb": 0.032364032000000265
+          "allocated_gb": 16.092632576,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03210700800000055
         },
         {
           "step": 110,
           "sequence_length": 176,
-          "allocated_gb": 4.1367552,
-          "reserved_gb": 5.236588544,
-          "kv_cache_gb": 0.032495103999999664
+          "allocated_gb": 16.092763648,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03223807999999906
         },
         {
           "step": 111,
           "sequence_length": 177,
-          "allocated_gb": 4.136886272,
-          "reserved_gb": 5.236588544,
-          "kv_cache_gb": 0.03262617599999995
+          "allocated_gb": 16.09289472,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03236915200000112
         },
         {
           "step": 112,
           "sequence_length": 178,
-          "allocated_gb": 4.137017344,
-          "reserved_gb": 5.236588544,
-          "kv_cache_gb": 0.03275724800000024
+          "allocated_gb": 16.093025792,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03250022399999963
         },
         {
           "step": 113,
           "sequence_length": 179,
-          "allocated_gb": 4.137148416,
-          "reserved_gb": 5.236588544,
-          "kv_cache_gb": 0.03288831999999964
+          "allocated_gb": 16.093156864,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.0326312960000017
         },
         {
           "step": 114,
           "sequence_length": 180,
-          "allocated_gb": 4.137279488,
-          "reserved_gb": 5.236588544,
-          "kv_cache_gb": 0.033019391999999925
+          "allocated_gb": 16.093287936,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03276236800000021
         },
         {
           "step": 115,
           "sequence_length": 181,
-          "allocated_gb": 4.13741056,
-          "reserved_gb": 5.236588544,
-          "kv_cache_gb": 0.03315046400000021
+          "allocated_gb": 16.093419008,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03289344000000227
         },
         {
           "step": 116,
           "sequence_length": 182,
-          "allocated_gb": 4.137541632,
-          "reserved_gb": 5.236588544,
-          "kv_cache_gb": 0.03328153599999961
+          "allocated_gb": 16.09355008,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03302451200000078
         },
         {
           "step": 117,
           "sequence_length": 183,
-          "allocated_gb": 4.137672704,
-          "reserved_gb": 5.236588544,
-          "kv_cache_gb": 0.0334126079999999
+          "allocated_gb": 16.093681152,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.033155583999999294
         },
         {
           "step": 118,
           "sequence_length": 184,
-          "allocated_gb": 4.137803776,
-          "reserved_gb": 5.236588544,
-          "kv_cache_gb": 0.03354368000000019
+          "allocated_gb": 16.093812224,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03328665600000136
         },
         {
           "step": 119,
           "sequence_length": 185,
-          "allocated_gb": 4.137934848,
-          "reserved_gb": 5.236588544,
-          "kv_cache_gb": 0.033674752000000474
+          "allocated_gb": 16.093943296,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03341772799999987
         },
         {
           "step": 120,
           "sequence_length": 186,
-          "allocated_gb": 4.13806592,
-          "reserved_gb": 5.234491392,
-          "kv_cache_gb": 0.03380582399999987
+          "allocated_gb": 16.094074368,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03354880000000193
         },
         {
           "step": 121,
           "sequence_length": 187,
-          "allocated_gb": 4.138196992,
-          "reserved_gb": 5.234491392,
-          "kv_cache_gb": 0.03393689600000016
+          "allocated_gb": 16.09420544,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.033679872000000444
         },
         {
           "step": 122,
           "sequence_length": 188,
-          "allocated_gb": 4.138328064,
-          "reserved_gb": 5.234491392,
-          "kv_cache_gb": 0.03406796800000045
+          "allocated_gb": 16.094336512,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03381094400000251
         },
         {
           "step": 123,
           "sequence_length": 189,
-          "allocated_gb": 4.138459136,
-          "reserved_gb": 5.234491392,
-          "kv_cache_gb": 0.03419903999999985
+          "allocated_gb": 16.094467584,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03394201600000102
         },
         {
           "step": 124,
           "sequence_length": 190,
-          "allocated_gb": 4.138590208,
-          "reserved_gb": 5.234491392,
-          "kv_cache_gb": 0.034330112000000135
+          "allocated_gb": 16.094598656,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03407308799999953
         },
         {
           "step": 125,
           "sequence_length": 191,
-          "allocated_gb": 4.13872128,
-          "reserved_gb": 5.236588544,
-          "kv_cache_gb": 0.03446118400000042
+          "allocated_gb": 16.094729728,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03420416000000159
         },
         {
           "step": 126,
           "sequence_length": 192,
-          "allocated_gb": 4.138852352,
-          "reserved_gb": 5.236588544,
-          "kv_cache_gb": 0.03459225599999982
+          "allocated_gb": 16.0948608,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.034335232000000104
         },
         {
           "step": 127,
           "sequence_length": 193,
-          "allocated_gb": 4.138984448,
-          "reserved_gb": 5.236588544,
-          "kv_cache_gb": 0.03472435200000046
+          "allocated_gb": 16.094993408,
+          "reserved_gb": 16.114515968,
+          "kv_cache_gb": 0.03446784000000136
         }
       ]
     },
     {
       "model": "meta-llama/Llama-3.1-8B",
-      "hardware": "NVIDIA A100-SXM4-80GB",
+      "hardware": "NVIDIA A100-SXM4-40GB",
       "dtype": "bfloat16",
       "prompt_length": 257,
       "max_new_tokens": 128,
-      "model_weight_gb": 4.104258048,
+      "model_weight_gb": 16.06052352,
       "snapshots": [
         {
           "step": 0,
           "sequence_length": 258,
-          "allocated_gb": 4.278846976,
-          "reserved_gb": 5.320474624,
-          "kv_cache_gb": 0.16606412799999948
+          "allocated_gb": 16.10351616,
+          "reserved_gb": 16.173236224,
+          "kv_cache_gb": 0.03446784000000136
         },
         {
           "step": 1,
           "sequence_length": 259,
-          "allocated_gb": 4.147643392,
-          "reserved_gb": 5.259657216,
-          "kv_cache_gb": 0.03486054399999983
+          "allocated_gb": 16.103651328,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03460300800000127
         },
         {
           "step": 2,
           "sequence_length": 260,
-          "allocated_gb": 4.147774464,
-          "reserved_gb": 5.259657216,
-          "kv_cache_gb": 0.034991616000000114
+          "allocated_gb": 16.1037824,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03473407999999978
         },
         {
           "step": 3,
           "sequence_length": 261,
-          "allocated_gb": 4.147905536,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.03512268799999951
+          "allocated_gb": 16.103913472,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03486515199999829
         },
         {
           "step": 4,
           "sequence_length": 262,
-          "allocated_gb": 4.148036608,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.0352537599999998
+          "allocated_gb": 16.104044544,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03499622400000035
         },
         {
           "step": 5,
           "sequence_length": 263,
-          "allocated_gb": 4.14816768,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.03538483200000009
+          "allocated_gb": 16.104175616,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.035127295999998864
         },
         {
           "step": 6,
           "sequence_length": 264,
-          "allocated_gb": 4.148298752,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.03551590399999949
+          "allocated_gb": 16.104306688,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03525836800000093
         },
         {
           "step": 7,
           "sequence_length": 265,
-          "allocated_gb": 4.148429824,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.035646975999999775
+          "allocated_gb": 16.10443776,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03538943999999944
         },
         {
           "step": 8,
           "sequence_length": 266,
-          "allocated_gb": 4.148560896,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.03577804800000006
+          "allocated_gb": 16.104568832,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03552051199999795
         },
         {
           "step": 9,
           "sequence_length": 267,
-          "allocated_gb": 4.148691968,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.03590911999999946
+          "allocated_gb": 16.104699904,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.035651584000000014
         },
         {
           "step": 10,
           "sequence_length": 268,
-          "allocated_gb": 4.14882304,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.03604019199999975
+          "allocated_gb": 16.104830976,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.035782655999998525
         },
         {
           "step": 11,
           "sequence_length": 269,
-          "allocated_gb": 4.148954112,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.036171264000000036
+          "allocated_gb": 16.104962048,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03591372800000059
         },
         {
           "step": 12,
           "sequence_length": 270,
-          "allocated_gb": 4.149085184,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.036302335999999436
+          "allocated_gb": 16.10509312,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.0360447999999991
         },
         {
           "step": 13,
           "sequence_length": 271,
-          "allocated_gb": 4.149216256,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.03643340799999972
+          "allocated_gb": 16.105224192,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.036175872000001164
         },
         {
           "step": 14,
           "sequence_length": 272,
-          "allocated_gb": 4.149347328,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.03656448000000001
+          "allocated_gb": 16.105355264,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.036306943999999675
         },
         {
           "step": 15,
           "sequence_length": 273,
-          "allocated_gb": 4.1494784,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.03669555199999941
+          "allocated_gb": 16.105486336,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.036438015999998186
         },
         {
           "step": 16,
           "sequence_length": 274,
-          "allocated_gb": 4.149609472,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.0368266239999997
+          "allocated_gb": 16.105617408,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03656908800000025
         },
         {
           "step": 17,
           "sequence_length": 275,
-          "allocated_gb": 4.149740544,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.036957695999999984
+          "allocated_gb": 16.10574848,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03670015999999876
         },
         {
           "step": 18,
           "sequence_length": 276,
-          "allocated_gb": 4.149871616,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.03708876800000027
+          "allocated_gb": 16.105879552,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.036831232000000824
         },
         {
           "step": 19,
           "sequence_length": 277,
-          "allocated_gb": 4.150002688,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.03721983999999967
+          "allocated_gb": 16.106010624,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.036962303999999335
         },
         {
           "step": 20,
           "sequence_length": 278,
-          "allocated_gb": 4.15013376,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.03735091199999996
+          "allocated_gb": 16.106141696,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.0370933760000014
         },
         {
           "step": 21,
           "sequence_length": 279,
-          "allocated_gb": 4.150264832,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.037481984000000246
+          "allocated_gb": 16.106272768,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03722444799999991
         },
         {
           "step": 22,
           "sequence_length": 280,
-          "allocated_gb": 4.150395904,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.037613055999999645
+          "allocated_gb": 16.10640384,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03735551999999842
         },
         {
           "step": 23,
           "sequence_length": 281,
-          "allocated_gb": 4.150526976,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.03774412799999993
+          "allocated_gb": 16.106534912,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.037486592000000485
         },
         {
           "step": 24,
           "sequence_length": 282,
-          "allocated_gb": 4.150658048,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.03787520000000022
+          "allocated_gb": 16.106665984,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.037617663999998996
         },
         {
           "step": 25,
           "sequence_length": 283,
-          "allocated_gb": 4.15078912,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.03800627199999962
+          "allocated_gb": 16.106797056,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03774873600000106
         },
         {
           "step": 26,
           "sequence_length": 284,
-          "allocated_gb": 4.150920192,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.038137343999999906
+          "allocated_gb": 16.106928128,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03787980799999957
         },
         {
           "step": 27,
           "sequence_length": 285,
-          "allocated_gb": 4.151051264,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.038268416000000194
+          "allocated_gb": 16.1070592,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03801087999999808
         },
         {
           "step": 28,
           "sequence_length": 286,
-          "allocated_gb": 4.151182336,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.03839948799999959
+          "allocated_gb": 16.107190272,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.038141952000000146
         },
         {
           "step": 29,
           "sequence_length": 287,
-          "allocated_gb": 4.151313408,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.03853055999999988
+          "allocated_gb": 16.107321344,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03827302399999866
         },
         {
           "step": 30,
           "sequence_length": 288,
-          "allocated_gb": 4.15144448,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.03866163200000017
+          "allocated_gb": 16.107452416,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03840409600000072
         },
         {
           "step": 31,
           "sequence_length": 289,
-          "allocated_gb": 4.151575552,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.03879270399999957
+          "allocated_gb": 16.107583488,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03853516799999923
         },
         {
           "step": 32,
           "sequence_length": 290,
-          "allocated_gb": 4.151706624,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.038923775999999854
+          "allocated_gb": 16.10771456,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.038666240000001295
         },
         {
           "step": 33,
           "sequence_length": 291,
-          "allocated_gb": 4.151837696,
-          "reserved_gb": 5.257560064,
-          "kv_cache_gb": 0.03905484800000014
+          "allocated_gb": 16.107845632,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.038797311999999806
         },
         {
           "step": 34,
           "sequence_length": 292,
-          "allocated_gb": 4.151968768,
-          "reserved_gb": 5.257560064,
-          "kv_cache_gb": 0.03918591999999954
+          "allocated_gb": 16.107976704,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03892838399999832
         },
         {
           "step": 35,
           "sequence_length": 293,
-          "allocated_gb": 4.15209984,
-          "reserved_gb": 5.257560064,
-          "kv_cache_gb": 0.03931699199999983
+          "allocated_gb": 16.108107776,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03905945600000038
         },
         {
           "step": 36,
           "sequence_length": 294,
-          "allocated_gb": 4.152230912,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.039448064000000116
+          "allocated_gb": 16.108238848,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03919052799999889
         },
         {
           "step": 37,
           "sequence_length": 295,
-          "allocated_gb": 4.152361984,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.039579135999999515
+          "allocated_gb": 16.10836992,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.039321600000000956
         },
         {
           "step": 38,
           "sequence_length": 296,
-          "allocated_gb": 4.152493056,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.0397102079999998
+          "allocated_gb": 16.108500992,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03945267199999947
         },
         {
           "step": 39,
           "sequence_length": 297,
-          "allocated_gb": 4.152624128,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.03984128000000009
+          "allocated_gb": 16.108632064,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03958374399999798
         },
         {
           "step": 40,
           "sequence_length": 298,
-          "allocated_gb": 4.1527552,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.03997235199999949
+          "allocated_gb": 16.108763136,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03971481600000004
         },
         {
           "step": 41,
           "sequence_length": 299,
-          "allocated_gb": 4.152886272,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04010342399999978
+          "allocated_gb": 16.108894208,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.03984588799999855
         },
         {
           "step": 42,
           "sequence_length": 300,
-          "allocated_gb": 4.153017344,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.040234496000000064
+          "allocated_gb": 16.10902528,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.039976960000000616
         },
         {
           "step": 43,
           "sequence_length": 301,
-          "allocated_gb": 4.153148416,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.04036556799999946
+          "allocated_gb": 16.109156352,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04010803199999913
         },
         {
           "step": 44,
           "sequence_length": 302,
-          "allocated_gb": 4.153279488,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04049663999999975
+          "allocated_gb": 16.109287424,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04023910400000119
         },
         {
           "step": 45,
           "sequence_length": 303,
-          "allocated_gb": 4.15341056,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04062771200000004
+          "allocated_gb": 16.109418496,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.0403701759999997
         },
         {
           "step": 46,
           "sequence_length": 304,
-          "allocated_gb": 4.153541632,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04075878399999944
+          "allocated_gb": 16.109549568,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04050124799999821
         },
         {
           "step": 47,
           "sequence_length": 305,
-          "allocated_gb": 4.153672704,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.040889855999999725
+          "allocated_gb": 16.10968064,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04063232000000028
         },
         {
           "step": 48,
           "sequence_length": 306,
-          "allocated_gb": 4.153803776,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04102092800000001
+          "allocated_gb": 16.109811712,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04076339199999879
         },
         {
           "step": 49,
           "sequence_length": 307,
-          "allocated_gb": 4.153934848,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04115199999999941
+          "allocated_gb": 16.109942784,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04089446400000085
         },
         {
           "step": 50,
           "sequence_length": 308,
-          "allocated_gb": 4.15406592,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.0412830719999997
+          "allocated_gb": 16.110073856,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04102553599999936
         },
         {
           "step": 51,
           "sequence_length": 309,
-          "allocated_gb": 4.154196992,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.041414143999999986
+          "allocated_gb": 16.110204928,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04115660800000143
         },
         {
           "step": 52,
           "sequence_length": 310,
-          "allocated_gb": 4.154328064,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.041545216000000273
+          "allocated_gb": 16.110336,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04128767999999994
         },
         {
           "step": 53,
           "sequence_length": 311,
-          "allocated_gb": 4.154459136,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04167628799999967
+          "allocated_gb": 16.110467072,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04141875199999845
         },
         {
           "step": 54,
           "sequence_length": 312,
-          "allocated_gb": 4.154590208,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04180735999999996
+          "allocated_gb": 16.110598144,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04154982400000051
         },
         {
           "step": 55,
           "sequence_length": 313,
-          "allocated_gb": 4.15472128,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.04193843200000025
+          "allocated_gb": 16.110729216,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.041680895999999024
         },
         {
           "step": 56,
           "sequence_length": 314,
-          "allocated_gb": 4.154852352,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04206950399999965
+          "allocated_gb": 16.110860288,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04181196800000109
         },
         {
           "step": 57,
           "sequence_length": 315,
-          "allocated_gb": 4.154983424,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.042200575999999934
+          "allocated_gb": 16.11099136,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.0419430399999996
         },
         {
           "step": 58,
           "sequence_length": 316,
-          "allocated_gb": 4.155114496,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.04233164800000022
+          "allocated_gb": 16.111122432,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04207411199999811
         },
         {
           "step": 59,
           "sequence_length": 317,
-          "allocated_gb": 4.155245568,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.04246271999999962
+          "allocated_gb": 16.111253504,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04220518400000017
         },
         {
           "step": 60,
           "sequence_length": 318,
-          "allocated_gb": 4.15537664,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.04259379199999991
+          "allocated_gb": 16.111384576,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.042336255999998684
         },
         {
           "step": 61,
           "sequence_length": 319,
-          "allocated_gb": 4.155507712,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.042724864000000196
+          "allocated_gb": 16.111515648,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04246732800000075
         },
         {
           "step": 62,
           "sequence_length": 320,
-          "allocated_gb": 4.155638784,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.042855935999999595
+          "allocated_gb": 16.11164672,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04259839999999926
         },
         {
           "step": 63,
           "sequence_length": 321,
-          "allocated_gb": 4.15577088,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04298803200000023
+          "allocated_gb": 16.111779328,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.042731008000000514
         },
         {
           "step": 64,
           "sequence_length": 322,
-          "allocated_gb": 4.155902464,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.04311961600000025
+          "allocated_gb": 16.111910912,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.042862591999998756
         },
         {
           "step": 65,
           "sequence_length": 323,
-          "allocated_gb": 4.156033536,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04325068799999965
+          "allocated_gb": 16.112041984,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04299366400000082
         },
         {
           "step": 66,
           "sequence_length": 324,
-          "allocated_gb": 4.156164608,
-          "reserved_gb": 5.257560064,
-          "kv_cache_gb": 0.043381759999999936
+          "allocated_gb": 16.112173056,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04312473599999933
         },
         {
           "step": 67,
           "sequence_length": 325,
-          "allocated_gb": 4.15629568,
-          "reserved_gb": 5.257560064,
-          "kv_cache_gb": 0.04351283200000022
+          "allocated_gb": 16.112304128,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.043255808000001394
         },
         {
           "step": 68,
           "sequence_length": 326,
-          "allocated_gb": 4.156426752,
-          "reserved_gb": 5.257560064,
-          "kv_cache_gb": 0.04364390399999962
+          "allocated_gb": 16.1124352,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.043386879999999906
         },
         {
           "step": 69,
           "sequence_length": 327,
-          "allocated_gb": 4.156557824,
-          "reserved_gb": 5.257560064,
-          "kv_cache_gb": 0.04377497599999991
+          "allocated_gb": 16.112566272,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04351795199999842
         },
         {
           "step": 70,
           "sequence_length": 328,
-          "allocated_gb": 4.156688896,
-          "reserved_gb": 5.257560064,
-          "kv_cache_gb": 0.0439060480000002
+          "allocated_gb": 16.112697344,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04364902400000048
         },
         {
           "step": 71,
           "sequence_length": 329,
-          "allocated_gb": 4.156819968,
-          "reserved_gb": 5.257560064,
-          "kv_cache_gb": 0.0440371199999996
+          "allocated_gb": 16.112828416,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04378009599999899
         },
         {
           "step": 72,
           "sequence_length": 330,
-          "allocated_gb": 4.15695104,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.044168191999999884
+          "allocated_gb": 16.112959488,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.043911168000001055
         },
         {
           "step": 73,
           "sequence_length": 331,
-          "allocated_gb": 4.157082112,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04429926400000017
+          "allocated_gb": 16.11309056,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.044042239999999566
         },
         {
           "step": 74,
           "sequence_length": 332,
-          "allocated_gb": 4.157213184,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04443033599999957
+          "allocated_gb": 16.113221632,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04417331199999808
         },
         {
           "step": 75,
           "sequence_length": 333,
-          "allocated_gb": 4.157344256,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04456140799999986
+          "allocated_gb": 16.113352704,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04430438400000014
         },
         {
           "step": 76,
           "sequence_length": 334,
-          "allocated_gb": 4.157475328,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.044692480000000145
+          "allocated_gb": 16.113483776,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04443545599999865
         },
         {
           "step": 77,
           "sequence_length": 335,
-          "allocated_gb": 4.1576064,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.044823551999999545
+          "allocated_gb": 16.113614848,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.044566528000000716
         },
         {
           "step": 78,
           "sequence_length": 336,
-          "allocated_gb": 4.157737472,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04495462399999983
+          "allocated_gb": 16.11374592,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04469759999999923
         },
         {
           "step": 79,
           "sequence_length": 337,
-          "allocated_gb": 4.157868544,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04508569600000012
+          "allocated_gb": 16.113876992,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04482867200000129
         },
         {
           "step": 80,
           "sequence_length": 338,
-          "allocated_gb": 4.157999616,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.04521676799999952
+          "allocated_gb": 16.114008064,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.0449597439999998
         },
         {
           "step": 81,
           "sequence_length": 339,
-          "allocated_gb": 4.158130688,
-          "reserved_gb": 5.255462912,
-          "kv_cache_gb": 0.045347839999999806
+          "allocated_gb": 16.114139136,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04509081599999831
         },
         {
           "step": 82,
           "sequence_length": 340,
-          "allocated_gb": 4.15826176,
-          "reserved_gb": 5.25336576,
-          "kv_cache_gb": 0.045478912000000093
+          "allocated_gb": 16.114270208,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.045221888000000376
         },
         {
           "step": 83,
           "sequence_length": 341,
-          "allocated_gb": 4.158392832,
-          "reserved_gb": 5.257560064,
-          "kv_cache_gb": 0.04560998399999949
+          "allocated_gb": 16.11440128,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04535295999999889
         },
         {
           "step": 84,
           "sequence_length": 342,
-          "allocated_gb": 4.158523904,
-          "reserved_gb": 5.259657216,
-          "kv_cache_gb": 0.04574105599999978
+          "allocated_gb": 16.114532352,
+          "reserved_gb": 16.175333376,
+          "kv_cache_gb": 0.04548403200000095
         },
         {
           "step": 85,
           "sequence_length": 343,
-          "allocated_gb": 4.158654976,
-          "reserved_gb": 5.278531584,
-          "kv_cache_gb": 0.04587212800000007
+          "allocated_gb": 16.114663424,
+          "reserved_gb": 16.196304896,
+          "kv_cache_gb": 0.04561510399999946
         },
         {
           "step": 86,
           "sequence_length": 344,
-          "allocated_gb": 4.158786048,
-          "reserved_gb": 5.278531584,
-          "kv_cache_gb": 0.04600319999999947
+          "allocated_gb": 16.114794496,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04574617599999797
         },
         {
           "step": 87,
           "sequence_length": 345,
-          "allocated_gb": 4.15891712,
-          "reserved_gb": 5.27433728,
-          "kv_cache_gb": 0.046134271999999754
+          "allocated_gb": 16.114925568,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04587724800000004
         },
         {
           "step": 88,
           "sequence_length": 346,
-          "allocated_gb": 4.159048192,
-          "reserved_gb": 5.27433728,
-          "kv_cache_gb": 0.04626534400000004
+          "allocated_gb": 16.11505664,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04600831999999855
         },
         {
           "step": 89,
           "sequence_length": 347,
-          "allocated_gb": 4.159179264,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.04639641599999944
+          "allocated_gb": 16.115187712,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04613939200000061
         },
         {
           "step": 90,
           "sequence_length": 348,
-          "allocated_gb": 4.159310336,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.04652748799999973
+          "allocated_gb": 16.115318784,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04627046399999912
         },
         {
           "step": 91,
           "sequence_length": 349,
-          "allocated_gb": 4.159441408,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.046658560000000016
+          "allocated_gb": 16.115449856,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04640153600000119
         },
         {
           "step": 92,
           "sequence_length": 350,
-          "allocated_gb": 4.15957248,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.046789631999999415
+          "allocated_gb": 16.115580928,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.0465326079999997
         },
         {
           "step": 93,
           "sequence_length": 351,
-          "allocated_gb": 4.159703552,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.0469207039999997
+          "allocated_gb": 16.115712,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04666367999999821
         },
         {
           "step": 94,
           "sequence_length": 352,
-          "allocated_gb": 4.159834624,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.04705177599999999
+          "allocated_gb": 16.115843072,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04679475200000027
         },
         {
           "step": 95,
           "sequence_length": 353,
-          "allocated_gb": 4.159965696,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.04718284800000028
+          "allocated_gb": 16.115974144,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.046925823999998784
         },
         {
           "step": 96,
           "sequence_length": 354,
-          "allocated_gb": 4.160096768,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.047313919999999676
+          "allocated_gb": 16.116105216,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04705689600000085
         },
         {
           "step": 97,
           "sequence_length": 355,
-          "allocated_gb": 4.16022784,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.047444991999999964
+          "allocated_gb": 16.116236288,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04718796799999936
         },
         {
           "step": 98,
           "sequence_length": 356,
-          "allocated_gb": 4.160358912,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.04757606400000025
+          "allocated_gb": 16.11636736,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04731904000000142
         },
         {
           "step": 99,
           "sequence_length": 357,
-          "allocated_gb": 4.160489984,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.04770713599999965
+          "allocated_gb": 16.116498432,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04745011199999993
         },
         {
           "step": 100,
           "sequence_length": 358,
-          "allocated_gb": 4.160621056,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.04783820799999994
+          "allocated_gb": 16.116629504,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.047581183999998444
         },
         {
           "step": 101,
           "sequence_length": 359,
-          "allocated_gb": 4.160752128,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.047969280000000225
+          "allocated_gb": 16.116760576,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04771225600000051
         },
         {
           "step": 102,
           "sequence_length": 360,
-          "allocated_gb": 4.1608832,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.048100351999999624
+          "allocated_gb": 16.116891648,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04784332799999902
         },
         {
           "step": 103,
           "sequence_length": 361,
-          "allocated_gb": 4.161014272,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.04823142399999991
+          "allocated_gb": 16.11702272,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04797440000000108
         },
         {
           "step": 104,
           "sequence_length": 362,
-          "allocated_gb": 4.161145344,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.0483624960000002
+          "allocated_gb": 16.117153792,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.048105471999999594
         },
         {
           "step": 105,
           "sequence_length": 363,
-          "allocated_gb": 4.161276416,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.0484935679999996
+          "allocated_gb": 16.117284864,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.048236543999998105
         },
         {
           "step": 106,
           "sequence_length": 364,
-          "allocated_gb": 4.161407488,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.048624639999999886
+          "allocated_gb": 16.117415936,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04836761600000017
         },
         {
           "step": 107,
           "sequence_length": 365,
-          "allocated_gb": 4.16153856,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.04875571200000017
+          "allocated_gb": 16.117547008,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04849868799999868
         },
         {
           "step": 108,
           "sequence_length": 366,
-          "allocated_gb": 4.161669632,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.04888678399999957
+          "allocated_gb": 16.11767808,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.048629760000000744
         },
         {
           "step": 109,
           "sequence_length": 367,
-          "allocated_gb": 4.161800704,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.04901785599999986
+          "allocated_gb": 16.117809152,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.048760831999999255
         },
         {
           "step": 110,
           "sequence_length": 368,
-          "allocated_gb": 4.161931776,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.04914892800000015
+          "allocated_gb": 16.117940224,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04889190400000132
         },
         {
           "step": 111,
           "sequence_length": 369,
-          "allocated_gb": 4.162062848,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.049279999999999546
+          "allocated_gb": 16.118071296,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04902297599999983
         },
         {
           "step": 112,
           "sequence_length": 370,
-          "allocated_gb": 4.16219392,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.049411071999999834
+          "allocated_gb": 16.118202368,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04915404799999834
         },
         {
           "step": 113,
           "sequence_length": 371,
-          "allocated_gb": 4.162324992,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.04954214400000012
+          "allocated_gb": 16.11833344,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.049285120000000404
         },
         {
           "step": 114,
           "sequence_length": 372,
-          "allocated_gb": 4.162456064,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.04967321599999952
+          "allocated_gb": 16.118464512,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.049416191999998915
         },
         {
           "step": 115,
           "sequence_length": 373,
-          "allocated_gb": 4.162587136,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.04980428799999981
+          "allocated_gb": 16.118595584,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04954726400000098
         },
         {
           "step": 116,
           "sequence_length": 374,
-          "allocated_gb": 4.162718208,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.049935360000000095
+          "allocated_gb": 16.118726656,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.04967833599999949
         },
         {
           "step": 117,
           "sequence_length": 375,
-          "allocated_gb": 4.16284928,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.050066431999999494
+          "allocated_gb": 16.118857728,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.049809407999998
         },
         {
           "step": 118,
           "sequence_length": 376,
-          "allocated_gb": 4.162980352,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.05019750399999978
+          "allocated_gb": 16.1189888,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.049940480000000065
         },
         {
           "step": 119,
           "sequence_length": 377,
-          "allocated_gb": 4.163111424,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.05032857600000007
+          "allocated_gb": 16.119119872,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.050071551999998576
         },
         {
           "step": 120,
           "sequence_length": 378,
-          "allocated_gb": 4.163242496,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.05045964799999947
+          "allocated_gb": 16.119250944,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.05020262400000064
         },
         {
           "step": 121,
           "sequence_length": 379,
-          "allocated_gb": 4.163373568,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.050590719999999756
+          "allocated_gb": 16.119382016,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.05033369599999915
         },
         {
           "step": 122,
           "sequence_length": 380,
-          "allocated_gb": 4.16350464,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.05072179200000004
+          "allocated_gb": 16.119513088,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.050464768000001214
         },
         {
           "step": 123,
           "sequence_length": 381,
-          "allocated_gb": 4.163635712,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.05085286399999944
+          "allocated_gb": 16.11964416,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.050595839999999725
         },
         {
           "step": 124,
           "sequence_length": 382,
-          "allocated_gb": 4.163766784,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.05098393599999973
+          "allocated_gb": 16.119775232,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.050726911999998237
         },
         {
           "step": 125,
           "sequence_length": 383,
-          "allocated_gb": 4.163897856,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.05111500800000002
+          "allocated_gb": 16.119906304,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.0508579840000003
         },
         {
           "step": 126,
           "sequence_length": 384,
-          "allocated_gb": 4.164028928,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.05124607999999942
+          "allocated_gb": 16.120037376,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.05098905599999881
         },
         {
           "step": 127,
           "sequence_length": 385,
-          "allocated_gb": 4.164161024,
-          "reserved_gb": 5.276434432,
-          "kv_cache_gb": 0.05137817600000005
+          "allocated_gb": 16.120169984,
+          "reserved_gb": 16.198402048,
+          "kv_cache_gb": 0.05112166400000007
         }
       ]
     },
     {
       "model": "meta-llama/Llama-3.1-8B",
-      "hardware": "NVIDIA A100-SXM4-80GB",
+      "hardware": "NVIDIA A100-SXM4-40GB",
       "dtype": "bfloat16",
       "prompt_length": 513,
       "max_new_tokens": 128,
-      "model_weight_gb": 4.104258048,
+      "model_weight_gb": 16.06052352,
       "snapshots": [
         {
           "step": 0,
           "sequence_length": 514,
-          "allocated_gb": 4.457082368,
-          "reserved_gb": 5.398069248,
-          "kv_cache_gb": 0.34429542400000024
+          "allocated_gb": 16.144105472,
+          "reserved_gb": 16.244539392,
+          "kv_cache_gb": 0.07505305599999801
         },
         {
           "step": 1,
           "sequence_length": 515,
-          "allocated_gb": 4.219649024,
-          "reserved_gb": 5.299503104,
-          "kv_cache_gb": 0.10686207999999997
+          "allocated_gb": 16.172496896,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.10344447999999673
         },
         {
           "step": 2,
           "sequence_length": 516,
-          "allocated_gb": 4.221758464,
-          "reserved_gb": 5.299503104,
-          "kv_cache_gb": 0.10897151999999988
+          "allocated_gb": 16.170407936,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.10135551999999848
         },
         {
           "step": 3,
           "sequence_length": 517,
-          "allocated_gb": 4.219646976,
-          "reserved_gb": 5.299503104,
-          "kv_cache_gb": 0.10686003200000016
+          "allocated_gb": 16.168292352,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.09923993600000003
         },
         {
           "step": 4,
           "sequence_length": 518,
-          "allocated_gb": 4.21753344,
-          "reserved_gb": 5.299503104,
-          "kv_cache_gb": 0.10474649600000063
+          "allocated_gb": 16.170366976,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.10131455999999872
         },
         {
           "step": 5,
           "sequence_length": 519,
-          "allocated_gb": 4.211346432,
-          "reserved_gb": 5.299503104,
-          "kv_cache_gb": 0.09855948800000025
+          "allocated_gb": 16.16932864,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.10027622399999814
         },
         {
           "step": 6,
           "sequence_length": 520,
-          "allocated_gb": 4.212274176,
-          "reserved_gb": 5.299503104,
-          "kv_cache_gb": 0.09948723200000043
+          "allocated_gb": 16.162045952,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.09299353599999804
         },
         {
           "step": 7,
           "sequence_length": 521,
-          "allocated_gb": 4.209163264,
-          "reserved_gb": 5.299503104,
-          "kv_cache_gb": 0.09637632000000007
+          "allocated_gb": 16.161040384,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.09198796799999798
         },
         {
           "step": 8,
           "sequence_length": 522,
-          "allocated_gb": 4.209140736,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09635379200000038
+          "allocated_gb": 16.158967808,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.0899153919999982
         },
         {
           "step": 9,
           "sequence_length": 523,
-          "allocated_gb": 4.206091264,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09330432000000055
+          "allocated_gb": 16.157894656,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08884223999999818
         },
         {
           "step": 10,
           "sequence_length": 524,
-          "allocated_gb": 4.202980352,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.0901934080000002
+          "allocated_gb": 16.157980672,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.0889282559999991
         },
         {
           "step": 11,
           "sequence_length": 525,
-          "allocated_gb": 4.2020096,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08922265600000046
+          "allocated_gb": 16.1589248,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08987238399999953
         },
         {
           "step": 12,
           "sequence_length": 526,
-          "allocated_gb": 4.20299264,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09020569599999995
+          "allocated_gb": 16.156899328,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08784691199999983
         },
         {
           "step": 13,
           "sequence_length": 527,
-          "allocated_gb": 4.202994688,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09020774400000064
+          "allocated_gb": 16.157937664,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08888524799999686
         },
         {
           "step": 14,
           "sequence_length": 528,
-          "allocated_gb": 4.203000832,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09021388800000008
+          "allocated_gb": 16.158091264,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08903884799999773
         },
         {
           "step": 15,
           "sequence_length": 529,
-          "allocated_gb": 4.2020608,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08927385600000015
+          "allocated_gb": 16.158957568,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08990515200000004
         },
         {
           "step": 16,
           "sequence_length": 530,
-          "allocated_gb": 4.202005504,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08921855999999995
+          "allocated_gb": 16.158957568,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08990515200000004
         },
         {
           "step": 17,
           "sequence_length": 531,
-          "allocated_gb": 4.202044416,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.0892574719999999
+          "allocated_gb": 16.155871232,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08681881599999741
         },
         {
           "step": 18,
           "sequence_length": 532,
-          "allocated_gb": 4.202107904,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08932096000000023
+          "allocated_gb": 16.155856896,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08680447999999785
         },
         {
           "step": 19,
           "sequence_length": 533,
-          "allocated_gb": 4.20212224,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08933529599999979
+          "allocated_gb": 16.15679488,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08774246399999797
         },
         {
           "step": 20,
           "sequence_length": 534,
-          "allocated_gb": 4.202130432,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08934348799999992
+          "allocated_gb": 16.155215872,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08616345599999775
         },
         {
           "step": 21,
           "sequence_length": 535,
-          "allocated_gb": 4.203068416,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09028147200000003
+          "allocated_gb": 16.15681536,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08776294399999784
         },
         {
           "step": 22,
           "sequence_length": 536,
-          "allocated_gb": 4.202165248,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08937830400000024
+          "allocated_gb": 16.156813312,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08776089599999892
         },
         {
           "step": 23,
           "sequence_length": 537,
-          "allocated_gb": 4.202206208,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.089419264
+          "allocated_gb": 16.156811264,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.087758848
         },
         {
           "step": 24,
           "sequence_length": 538,
-          "allocated_gb": 4.203092992,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09030604800000042
+          "allocated_gb": 16.156809216,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08775679999999753
         },
         {
           "step": 25,
           "sequence_length": 539,
-          "allocated_gb": 4.201423872,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08863692800000056
+          "allocated_gb": 16.156807168,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.0877547519999986
         },
         {
           "step": 26,
           "sequence_length": 540,
-          "allocated_gb": 4.203109376,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09032243199999979
+          "allocated_gb": 16.156069888,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08701747199999943
         },
         {
           "step": 27,
           "sequence_length": 541,
-          "allocated_gb": 4.203111424,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09032448000000048
+          "allocated_gb": 16.155846656,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08679423999999969
         },
         {
           "step": 28,
           "sequence_length": 542,
-          "allocated_gb": 4.201124864,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08833791999999985
+          "allocated_gb": 16.155987968,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08693555199999992
         },
         {
           "step": 29,
           "sequence_length": 543,
-          "allocated_gb": 4.201145344,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08835840000000061
+          "allocated_gb": 16.15681536,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08776294399999784
         },
         {
           "step": 30,
           "sequence_length": 544,
-          "allocated_gb": 4.202320896,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08953395200000003
+          "allocated_gb": 16.155947008,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.0868945919999966
         },
         {
           "step": 31,
           "sequence_length": 545,
-          "allocated_gb": 4.203136,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09034905599999998
+          "allocated_gb": 16.156817408,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08776499199999677
         },
         {
           "step": 32,
           "sequence_length": 546,
-          "allocated_gb": 4.202288128,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.0895011840000004
+          "allocated_gb": 16.156817408,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08776499199999677
         },
         {
           "step": 33,
           "sequence_length": 547,
-          "allocated_gb": 4.202165248,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08937830400000024
+          "allocated_gb": 16.155127808,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08607539199999792
         },
         {
           "step": 34,
           "sequence_length": 548,
-          "allocated_gb": 4.202441728,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08965478400000038
+          "allocated_gb": 16.156829696,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.0877772799999974
         },
         {
           "step": 35,
           "sequence_length": 549,
-          "allocated_gb": 4.203150336,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09036339200000043
+          "allocated_gb": 16.156827648,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08777523199999848
         },
         {
           "step": 36,
           "sequence_length": 550,
-          "allocated_gb": 4.20268544,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.089898496
+          "allocated_gb": 16.155922432,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08687001599999888
         },
         {
           "step": 37,
           "sequence_length": 551,
-          "allocated_gb": 4.203162624,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09037568000000018
+          "allocated_gb": 16.15603712,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08698470399999891
         },
         {
           "step": 38,
           "sequence_length": 552,
-          "allocated_gb": 4.203160576,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09037363200000037
+          "allocated_gb": 16.155899904,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08684748800000008
         },
         {
           "step": 39,
           "sequence_length": 553,
-          "allocated_gb": 4.203158528,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09037158400000056
+          "allocated_gb": 16.156100608,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08704819199999747
         },
         {
           "step": 40,
           "sequence_length": 554,
-          "allocated_gb": 4.202525696,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08973875200000059
+          "allocated_gb": 16.156837888,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08778547199999664
         },
         {
           "step": 41,
           "sequence_length": 555,
-          "allocated_gb": 4.20316672,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.0903797759999998
+          "allocated_gb": 16.156155904,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08710348799999679
         },
         {
           "step": 42,
           "sequence_length": 556,
-          "allocated_gb": 4.203162624,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09037568000000018
+          "allocated_gb": 16.156841984,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08778956799999804
         },
         {
           "step": 43,
           "sequence_length": 557,
-          "allocated_gb": 4.20243968,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08965273600000057
+          "allocated_gb": 16.15596544,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08691302399999756
         },
         {
           "step": 44,
           "sequence_length": 558,
-          "allocated_gb": 4.203160576,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09037363200000037
+          "allocated_gb": 16.155971584,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08691916799999788
         },
         {
           "step": 45,
           "sequence_length": 559,
-          "allocated_gb": 4.202386432,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08959948800000017
+          "allocated_gb": 16.156438528,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08738611199999724
         },
         {
           "step": 46,
           "sequence_length": 560,
-          "allocated_gb": 4.202284032,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08949708799999989
+          "allocated_gb": 16.15685632,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.0878039039999976
         },
         {
           "step": 47,
           "sequence_length": 561,
-          "allocated_gb": 4.202396672,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08960972800000011
+          "allocated_gb": 16.156862464,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08781004799999792
         },
         {
           "step": 48,
           "sequence_length": 562,
-          "allocated_gb": 4.203150336,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09036339200000043
+          "allocated_gb": 16.155920384,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08686796799999996
         },
         {
           "step": 49,
           "sequence_length": 563,
-          "allocated_gb": 4.202402816,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08961587200000043
+          "allocated_gb": 16.156217344,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08716492799999997
         },
         {
           "step": 50,
           "sequence_length": 564,
-          "allocated_gb": 4.202400768,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08961382400000062
+          "allocated_gb": 16.156874752,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08782233599999856
         },
         {
           "step": 51,
           "sequence_length": 565,
-          "allocated_gb": 4.203144192,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09035724800000011
+          "allocated_gb": 16.156207104,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08715468799999826
         },
         {
           "step": 52,
           "sequence_length": 566,
-          "allocated_gb": 4.202415104,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08962816000000018
+          "allocated_gb": 16.156874752,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08782233599999856
         },
         {
           "step": 53,
           "sequence_length": 567,
-          "allocated_gb": 4.202445824,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08965888
+          "allocated_gb": 16.156870656,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08781823999999716
         },
         {
           "step": 54,
           "sequence_length": 568,
-          "allocated_gb": 4.203138048,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.0903511039999998
+          "allocated_gb": 16.154990592,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08593817599999909
         },
         {
           "step": 55,
           "sequence_length": 569,
-          "allocated_gb": 4.201524224,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08873728000000014
+          "allocated_gb": 16.15570944,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.0866570239999973
         },
         {
           "step": 56,
           "sequence_length": 570,
-          "allocated_gb": 4.2027264,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08993945600000064
+          "allocated_gb": 16.155152384,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.0860999679999992
         },
         {
           "step": 57,
           "sequence_length": 571,
-          "allocated_gb": 4.203144192,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09035724800000011
+          "allocated_gb": 16.15512576,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.086073343999999
         },
         {
           "step": 58,
           "sequence_length": 572,
-          "allocated_gb": 4.203138048,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.0903511039999998
+          "allocated_gb": 16.15480832,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.0857559039999991
         },
         {
           "step": 59,
           "sequence_length": 573,
-          "allocated_gb": 4.203131904,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09034496000000036
+          "allocated_gb": 16.155531264,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08647884799999872
         },
         {
           "step": 60,
           "sequence_length": 574,
-          "allocated_gb": 4.20312576,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09033881600000004
+          "allocated_gb": 16.155713536,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.0866611199999987
         },
         {
           "step": 61,
           "sequence_length": 575,
-          "allocated_gb": 4.201266176,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08847923200000007
+          "allocated_gb": 16.15570944,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.0866570239999973
         },
         {
           "step": 62,
           "sequence_length": 576,
-          "allocated_gb": 4.201278464,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08849151999999982
+          "allocated_gb": 16.155705344,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08665292799999946
         },
         {
           "step": 63,
           "sequence_length": 577,
-          "allocated_gb": 4.202582016,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08979507200000025
+          "allocated_gb": 16.154910208,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08585779199999877
         },
         {
           "step": 64,
           "sequence_length": 578,
-          "allocated_gb": 4.203119104,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09033216
+          "allocated_gb": 16.155469824,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08641740799999909
         },
         {
           "step": 65,
           "sequence_length": 579,
-          "allocated_gb": 4.202469888,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08968294400000065
+          "allocated_gb": 16.155727872,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08667545599999826
         },
         {
           "step": 66,
           "sequence_length": 580,
-          "allocated_gb": 4.202205696,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08941875200000027
+          "allocated_gb": 16.155723776,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08667135999999687
         },
         {
           "step": 67,
           "sequence_length": 581,
-          "allocated_gb": 4.202678784,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08989183999999995
+          "allocated_gb": 16.15571968,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08666726399999902
         },
         {
           "step": 68,
           "sequence_length": 582,
-          "allocated_gb": 4.203110912,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09032396799999987
+          "allocated_gb": 16.155715584,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08666316799999763
         },
         {
           "step": 69,
           "sequence_length": 583,
-          "allocated_gb": 4.20311296,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09032601600000056
+          "allocated_gb": 16.155711488,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08665907199999978
         },
         {
           "step": 70,
           "sequence_length": 584,
-          "allocated_gb": 4.203125248,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09033830400000031
+          "allocated_gb": 16.155707392,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08665497599999838
         },
         {
           "step": 71,
           "sequence_length": 585,
-          "allocated_gb": 4.203137536,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09035059200000006
+          "allocated_gb": 16.15393792,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08488550399999895
         },
         {
           "step": 72,
           "sequence_length": 586,
-          "allocated_gb": 4.203149824,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09036287999999981
+          "allocated_gb": 16.155256832,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08620441599999751
         },
         {
           "step": 73,
           "sequence_length": 587,
-          "allocated_gb": 4.202936832,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09014988800000001
+          "allocated_gb": 16.15576064,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08670822399999878
         },
         {
           "step": 74,
           "sequence_length": 588,
-          "allocated_gb": 4.203182592,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09039564800000033
+          "allocated_gb": 16.155400192,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08634777599999666
         },
         {
           "step": 75,
           "sequence_length": 589,
-          "allocated_gb": 4.203190784,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09040384000000046
+          "allocated_gb": 16.155858944,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08680652799999677
         },
         {
           "step": 76,
           "sequence_length": 590,
-          "allocated_gb": 4.202750464,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08996352000000041
+          "allocated_gb": 16.15515648,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08610406399999704
         },
         {
           "step": 77,
           "sequence_length": 591,
-          "allocated_gb": 4.20321536,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09042841599999996
+          "allocated_gb": 16.155201536,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08614911999999819
         },
         {
           "step": 78,
           "sequence_length": 592,
-          "allocated_gb": 4.202660352,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08987340799999988
+          "allocated_gb": 16.15702016,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08796774399999663
         },
         {
           "step": 79,
           "sequence_length": 593,
-          "allocated_gb": 4.202523136,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.08973619200000016
+          "allocated_gb": 16.15541248,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.0863600639999973
         },
         {
           "step": 80,
           "sequence_length": 594,
-          "allocated_gb": 4.203784704,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09099776000000048
+          "allocated_gb": 16.155836416,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08678399999999797
         },
         {
           "step": 81,
           "sequence_length": 595,
-          "allocated_gb": 4.204356096,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09156915199999993
+          "allocated_gb": 16.155428864,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08637644799999933
         },
         {
           "step": 82,
           "sequence_length": 596,
-          "allocated_gb": 4.203831808,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09104486400000056
+          "allocated_gb": 16.15525888,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08620646399999998
         },
         {
           "step": 83,
           "sequence_length": 597,
-          "allocated_gb": 4.20385024,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09106329600000063
+          "allocated_gb": 16.156678144,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08762572799999901
         },
         {
           "step": 84,
           "sequence_length": 598,
-          "allocated_gb": 4.204411392,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09162444800000014
+          "allocated_gb": 16.156940288,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08788787199999959
         },
         {
           "step": 85,
           "sequence_length": 599,
-          "allocated_gb": 4.203905536,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09111859199999994
+          "allocated_gb": 16.15578112,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08672870399999866
         },
         {
           "step": 86,
           "sequence_length": 600,
-          "allocated_gb": 4.203956736,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09116979200000053
+          "allocated_gb": 16.154632192,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08557977599999944
         },
         {
           "step": 87,
           "sequence_length": 601,
-          "allocated_gb": 4.204466688,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09167974400000034
+          "allocated_gb": 16.155805696,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08675327999999993
         },
         {
           "step": 88,
           "sequence_length": 602,
-          "allocated_gb": 4.203076096,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09028915200000043
+          "allocated_gb": 16.155813888,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08676147199999917
         },
         {
           "step": 89,
           "sequence_length": 603,
-          "allocated_gb": 4.204501504,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09171455999999978
+          "allocated_gb": 16.15582208,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08676966399999841
         },
         {
           "step": 90,
           "sequence_length": 604,
-          "allocated_gb": 4.204517888,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09173094400000004
+          "allocated_gb": 16.154871808,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08581939199999766
         },
         {
           "step": 91,
           "sequence_length": 605,
-          "allocated_gb": 4.20453632,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.0917493760000001
+          "allocated_gb": 16.155856896,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08680447999999785
         },
         {
           "step": 92,
           "sequence_length": 606,
-          "allocated_gb": 4.204554752,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09176780800000017
+          "allocated_gb": 16.155865088,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08681267199999709
         },
         {
           "step": 93,
           "sequence_length": 607,
-          "allocated_gb": 4.204284416,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09149747200000036
+          "allocated_gb": 16.15561728,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08656486399999963
         },
         {
           "step": 94,
           "sequence_length": 608,
-          "allocated_gb": 4.204130816,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09134387200000038
+          "allocated_gb": 16.155889664,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08683724799999837
         },
         {
           "step": 95,
           "sequence_length": 609,
-          "allocated_gb": 4.203756032,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09096908800000048
+          "allocated_gb": 16.155308032,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08625561599999898
         },
         {
           "step": 96,
           "sequence_length": 610,
-          "allocated_gb": 4.203639296,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09085235200000064
+          "allocated_gb": 16.156995584,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.0879431679999989
         },
         {
           "step": 97,
           "sequence_length": 611,
-          "allocated_gb": 4.203811328,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09102438399999979
+          "allocated_gb": 16.157014016,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08796159999999986
         },
         {
           "step": 98,
           "sequence_length": 612,
-          "allocated_gb": 4.203835904,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09104896000000018
+          "allocated_gb": 16.157032448,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08798003199999727
         },
         {
           "step": 99,
           "sequence_length": 613,
-          "allocated_gb": 4.204694016,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09190707200000059
+          "allocated_gb": 16.15705088,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08799846399999822
         },
         {
           "step": 100,
           "sequence_length": 614,
-          "allocated_gb": 4.204708352,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09192140800000015
+          "allocated_gb": 16.157069312,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08801689599999918
         },
         {
           "step": 101,
           "sequence_length": 615,
-          "allocated_gb": 4.204722688,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.0919357440000006
+          "allocated_gb": 16.157087744,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08803532799999658
         },
         {
           "step": 102,
           "sequence_length": 616,
-          "allocated_gb": 4.203905536,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09111859199999994
+          "allocated_gb": 16.156891136,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08783871999999704
         },
         {
           "step": 103,
           "sequence_length": 617,
-          "allocated_gb": 4.204446208,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09165926400000046
+          "allocated_gb": 16.1571328,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08808038399999774
         },
         {
           "step": 104,
           "sequence_length": 618,
-          "allocated_gb": 4.205597184,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09281024000000038
+          "allocated_gb": 16.15619072,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08713830399999978
         },
         {
           "step": 105,
           "sequence_length": 619,
-          "allocated_gb": 4.204816896,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09202995199999986
+          "allocated_gb": 16.157179904,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08812748799999781
         },
         {
           "step": 106,
           "sequence_length": 620,
-          "allocated_gb": 4.205578752,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09279180800000031
+          "allocated_gb": 16.157411328,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08835891199999679
         },
         {
           "step": 107,
           "sequence_length": 621,
-          "allocated_gb": 4.204919296,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09213235200000014
+          "allocated_gb": 16.157630464,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08857804799999869
         },
         {
           "step": 108,
           "sequence_length": 622,
-          "allocated_gb": 4.20534528,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09255833600000063
+          "allocated_gb": 16.157638656,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08858623999999793
         },
         {
           "step": 109,
           "sequence_length": 623,
-          "allocated_gb": 4.205136384,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09234944000000045
+          "allocated_gb": 16.158089216,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.0890367999999988
         },
         {
           "step": 110,
           "sequence_length": 624,
-          "allocated_gb": 4.20487424,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09208729599999987
+          "allocated_gb": 16.1582592,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08920678399999815
         },
         {
           "step": 111,
           "sequence_length": 625,
-          "allocated_gb": 4.20473088,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09194393599999984
+          "allocated_gb": 16.158087168,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08903475199999988
         },
         {
           "step": 112,
           "sequence_length": 626,
-          "allocated_gb": 4.204786176,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09199923200000004
+          "allocated_gb": 16.158267392,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08921497599999739
         },
         {
           "step": 113,
           "sequence_length": 627,
-          "allocated_gb": 4.204603904,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09181696000000006
+          "allocated_gb": 16.157790208,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08873779199999987
         },
         {
           "step": 114,
           "sequence_length": 628,
-          "allocated_gb": 4.204749312,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.0919623679999999
+          "allocated_gb": 16.157382656,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08833023999999767
         },
         {
           "step": 115,
           "sequence_length": 629,
-          "allocated_gb": 4.205359616,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09257267200000019
+          "allocated_gb": 16.15830016,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08924774399999791
         },
         {
           "step": 116,
           "sequence_length": 630,
-          "allocated_gb": 4.203903488,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09111654400000013
+          "allocated_gb": 16.158298112,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08924569599999899
         },
         {
           "step": 117,
           "sequence_length": 631,
-          "allocated_gb": 4.204110336,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.0913233920000005
+          "allocated_gb": 16.158291968,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08923955199999867
         },
         {
           "step": 118,
           "sequence_length": 632,
-          "allocated_gb": 4.203260416,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09047347200000022
+          "allocated_gb": 16.158314496,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08926207999999747
         },
         {
           "step": 119,
           "sequence_length": 633,
-          "allocated_gb": 4.203313664,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09052672000000062
+          "allocated_gb": 16.15834112,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08928870399999767
         },
         {
           "step": 120,
           "sequence_length": 634,
-          "allocated_gb": 4.20410624,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.091319296
+          "allocated_gb": 16.15758336,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08853094399999861
         },
         {
           "step": 121,
           "sequence_length": 635,
-          "allocated_gb": 4.204104192,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09131724800000018
+          "allocated_gb": 16.157822976,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08877055999999683
         },
         {
           "step": 122,
           "sequence_length": 636,
-          "allocated_gb": 4.203555328,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09076838400000042
+          "allocated_gb": 16.15844352,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08939110399999706
         },
         {
           "step": 123,
           "sequence_length": 637,
-          "allocated_gb": 4.203985408,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09119846400000053
+          "allocated_gb": 16.158470144,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08941772799999725
         },
         {
           "step": 124,
           "sequence_length": 638,
-          "allocated_gb": 4.204153344,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09136640000000007
+          "allocated_gb": 16.158496768,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08944435199999745
         },
         {
           "step": 125,
           "sequence_length": 639,
-          "allocated_gb": 4.20415744,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09137049600000058
+          "allocated_gb": 16.158531584,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08947916799999689
         },
         {
           "step": 126,
           "sequence_length": 640,
-          "allocated_gb": 4.204163584,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09137664000000001
+          "allocated_gb": 16.158570496,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.08951807999999772
         },
         {
           "step": 127,
           "sequence_length": 641,
-          "allocated_gb": 4.204168704,
-          "reserved_gb": 5.265948672,
-          "kv_cache_gb": 0.09138175999999998
+          "allocated_gb": 16.15965952,
+          "reserved_gb": 16.246636544,
+          "kv_cache_gb": 0.09060710400000005
         }
       ]
     },
     {
       "model": "meta-llama/Llama-3.1-8B",
-      "hardware": "NVIDIA A100-SXM4-80GB",
+      "hardware": "NVIDIA A100-SXM4-40GB",
       "dtype": "bfloat16",
       "prompt_length": 1025,
       "max_new_tokens": 128,
-      "model_weight_gb": 4.104258048,
+      "model_weight_gb": 16.06052352,
       "snapshots": [
         {
           "step": 0,
           "sequence_length": 1026,
-          "allocated_gb": 4.773611008,
-          "reserved_gb": 5.668601856,
-          "kv_cache_gb": 0.6608158719999997
+          "allocated_gb": 16.20421632,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13515571199999954
         },
         {
           "step": 1,
           "sequence_length": 1027,
-          "allocated_gb": 4.248349696,
-          "reserved_gb": 5.383389184,
-          "kv_cache_gb": 0.1355545600000001
+          "allocated_gb": 16.204357632,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13529702399999977
         },
         {
           "step": 2,
           "sequence_length": 1028,
-          "allocated_gb": 4.248480768,
-          "reserved_gb": 5.383389184,
-          "kv_cache_gb": 0.1356856320000004
+          "allocated_gb": 16.204488704,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13542809599999828
         },
         {
           "step": 3,
           "sequence_length": 1029,
-          "allocated_gb": 4.24861184,
-          "reserved_gb": 5.383389184,
-          "kv_cache_gb": 0.1358167039999998
+          "allocated_gb": 16.204619776,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13555916800000034
         },
         {
           "step": 4,
           "sequence_length": 1030,
-          "allocated_gb": 4.248742912,
-          "reserved_gb": 5.383389184,
-          "kv_cache_gb": 0.13594777600000008
+          "allocated_gb": 16.204750848,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13569023999999885
         },
         {
           "step": 5,
           "sequence_length": 1031,
-          "allocated_gb": 4.248873984,
-          "reserved_gb": 5.383389184,
-          "kv_cache_gb": 0.13607884800000036
+          "allocated_gb": 16.20488192,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13582131199999736
         },
         {
           "step": 6,
           "sequence_length": 1032,
-          "allocated_gb": 4.249005056,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.13620991999999976
+          "allocated_gb": 16.205012992,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13595238399999943
         },
         {
           "step": 7,
           "sequence_length": 1033,
-          "allocated_gb": 4.249136128,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.13634099200000005
+          "allocated_gb": 16.205144064,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13608345599999794
         },
         {
           "step": 8,
           "sequence_length": 1034,
-          "allocated_gb": 4.2492672,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.13647206400000034
+          "allocated_gb": 16.205275136,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.136214528
         },
         {
           "step": 9,
           "sequence_length": 1035,
-          "allocated_gb": 4.249398272,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.13660313599999974
+          "allocated_gb": 16.205406208,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1363455999999985
         },
         {
           "step": 10,
           "sequence_length": 1036,
-          "allocated_gb": 4.249529344,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.13673420800000002
+          "allocated_gb": 16.20553728,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13647667200000058
         },
         {
           "step": 11,
           "sequence_length": 1037,
-          "allocated_gb": 4.249660416,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.1368652800000003
+          "allocated_gb": 16.205668352,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1366077439999991
         },
         {
           "step": 12,
           "sequence_length": 1038,
-          "allocated_gb": 4.249791488,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.1369963519999997
+          "allocated_gb": 16.205799424,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1367388159999976
         },
         {
           "step": 13,
           "sequence_length": 1039,
-          "allocated_gb": 4.24992256,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.137127424
+          "allocated_gb": 16.205930496,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13686988799999966
         },
         {
           "step": 14,
           "sequence_length": 1040,
-          "allocated_gb": 4.250053632,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.13725849600000029
+          "allocated_gb": 16.206061568,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13700095999999817
         },
         {
           "step": 15,
           "sequence_length": 1041,
-          "allocated_gb": 4.250184704,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.13738956799999968
+          "allocated_gb": 16.20619264,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13713203200000024
         },
         {
           "step": 16,
           "sequence_length": 1042,
-          "allocated_gb": 4.250315776,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.13752063999999997
+          "allocated_gb": 16.206323712,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13726310399999875
         },
         {
           "step": 17,
           "sequence_length": 1043,
-          "allocated_gb": 4.250446848,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.13765171200000026
+          "allocated_gb": 16.206454784,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1373941760000008
         },
         {
           "step": 18,
           "sequence_length": 1044,
-          "allocated_gb": 4.25057792,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.13778278399999966
+          "allocated_gb": 16.206585856,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13752524799999932
         },
         {
           "step": 19,
           "sequence_length": 1045,
-          "allocated_gb": 4.250708992,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.13791385599999995
+          "allocated_gb": 16.206716928,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13765631999999783
         },
         {
           "step": 20,
           "sequence_length": 1046,
-          "allocated_gb": 4.250840064,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.13804492800000023
+          "allocated_gb": 16.206848,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1377873919999999
         },
         {
           "step": 21,
           "sequence_length": 1047,
-          "allocated_gb": 4.250971136,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.13817600000000052
+          "allocated_gb": 16.206979072,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1379184639999984
         },
         {
           "step": 22,
           "sequence_length": 1048,
-          "allocated_gb": 4.251102208,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.13830707199999992
+          "allocated_gb": 16.207110144,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13804953600000047
         },
         {
           "step": 23,
           "sequence_length": 1049,
-          "allocated_gb": 4.25123328,
-          "reserved_gb": 5.351931904,
-          "kv_cache_gb": 0.1384381440000002
+          "allocated_gb": 16.207241216,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13818060799999898
         },
         {
           "step": 24,
           "sequence_length": 1050,
-          "allocated_gb": 4.251364352,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.1385692160000005
+          "allocated_gb": 16.207372288,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1383116799999975
         },
         {
           "step": 25,
           "sequence_length": 1051,
-          "allocated_gb": 4.251495424,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.1387002879999999
+          "allocated_gb": 16.20750336,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13844275199999956
         },
         {
           "step": 26,
           "sequence_length": 1052,
-          "allocated_gb": 4.251626496,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.13883136000000018
+          "allocated_gb": 16.207634432,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13857382399999807
         },
         {
           "step": 27,
           "sequence_length": 1053,
-          "allocated_gb": 4.251757568,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.13896243200000047
+          "allocated_gb": 16.207765504,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13870489600000013
         },
         {
           "step": 28,
           "sequence_length": 1054,
-          "allocated_gb": 4.25188864,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.13909350399999987
+          "allocated_gb": 16.207896576,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13883596799999864
         },
         {
           "step": 29,
           "sequence_length": 1055,
-          "allocated_gb": 4.252019712,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.13922457600000016
+          "allocated_gb": 16.208027648,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1389670400000007
         },
         {
           "step": 30,
           "sequence_length": 1056,
-          "allocated_gb": 4.252150784,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.13935564800000044
+          "allocated_gb": 16.20815872,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13909811199999922
         },
         {
           "step": 31,
           "sequence_length": 1057,
-          "allocated_gb": 4.252281856,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.13948671999999984
+          "allocated_gb": 16.208289792,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13922918399999773
         },
         {
           "step": 32,
           "sequence_length": 1058,
-          "allocated_gb": 4.252412928,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.13961779200000013
+          "allocated_gb": 16.208420864,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1393602559999998
         },
         {
           "step": 33,
           "sequence_length": 1059,
-          "allocated_gb": 4.252544,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.13974886400000042
+          "allocated_gb": 16.208551936,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1394913279999983
         },
         {
           "step": 34,
           "sequence_length": 1060,
-          "allocated_gb": 4.252675072,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.13987993599999982
+          "allocated_gb": 16.208683008,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13962240000000037
         },
         {
           "step": 35,
           "sequence_length": 1061,
-          "allocated_gb": 4.252806144,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1400110080000001
+          "allocated_gb": 16.20881408,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.13975347199999888
         },
         {
           "step": 36,
           "sequence_length": 1062,
-          "allocated_gb": 4.252937216,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1401420800000004
+          "allocated_gb": 16.212066304,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14300569599999946
         },
         {
           "step": 37,
           "sequence_length": 1063,
-          "allocated_gb": 4.253068288,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1402731519999998
+          "allocated_gb": 16.212107264,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14304665599999922
         },
         {
           "step": 38,
           "sequence_length": 1064,
-          "allocated_gb": 4.25319936,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14040422400000008
+          "allocated_gb": 16.212148224,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14308761599999897
         },
         {
           "step": 39,
           "sequence_length": 1065,
-          "allocated_gb": 4.253330432,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14053529600000036
+          "allocated_gb": 16.212189184,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14312857599999873
         },
         {
           "step": 40,
           "sequence_length": 1066,
-          "allocated_gb": 4.253461504,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14066636799999976
+          "allocated_gb": 16.21223424,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14317363199999988
         },
         {
           "step": 41,
           "sequence_length": 1067,
-          "allocated_gb": 4.253592576,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14079744000000005
+          "allocated_gb": 16.212279296,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14321868799999748
         },
         {
           "step": 42,
           "sequence_length": 1068,
-          "allocated_gb": 4.253723648,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14092851200000034
+          "allocated_gb": 16.212324352,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14326374399999864
         },
         {
           "step": 43,
           "sequence_length": 1069,
-          "allocated_gb": 4.25385472,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14105958399999974
+          "allocated_gb": 16.212369408,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1433087999999998
         },
         {
           "step": 44,
           "sequence_length": 1070,
-          "allocated_gb": 4.253985792,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14119065600000003
+          "allocated_gb": 16.212414464,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1433538559999974
         },
         {
           "step": 45,
           "sequence_length": 1071,
-          "allocated_gb": 4.254116864,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1413217280000003
+          "allocated_gb": 16.21245952,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14339891199999855
         },
         {
           "step": 46,
           "sequence_length": 1072,
-          "allocated_gb": 4.254247936,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1414527999999997
+          "allocated_gb": 16.212504576,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1434439679999997
         },
         {
           "step": 47,
           "sequence_length": 1073,
-          "allocated_gb": 4.254379008,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.141583872
+          "allocated_gb": 16.212549632,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14348902400000085
         },
         {
           "step": 48,
           "sequence_length": 1074,
-          "allocated_gb": 4.25451008,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1417149440000003
+          "allocated_gb": 16.212594688,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14353407999999845
         },
         {
           "step": 49,
           "sequence_length": 1075,
-          "allocated_gb": 4.254641152,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1418460159999997
+          "allocated_gb": 16.212639744,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1435791359999996
         },
         {
           "step": 50,
           "sequence_length": 1076,
-          "allocated_gb": 4.254772224,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14197708799999997
+          "allocated_gb": 16.21204992,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14298931199999743
         },
         {
           "step": 51,
           "sequence_length": 1077,
-          "allocated_gb": 4.254903296,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14210816000000026
+          "allocated_gb": 16.212754432,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14369382399999964
         },
         {
           "step": 52,
           "sequence_length": 1078,
-          "allocated_gb": 4.255034368,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14223923199999966
+          "allocated_gb": 16.212795392,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1437347839999994
         },
         {
           "step": 53,
           "sequence_length": 1079,
-          "allocated_gb": 4.25516544,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14237030399999995
+          "allocated_gb": 16.212836352,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14377574399999915
         },
         {
           "step": 54,
           "sequence_length": 1080,
-          "allocated_gb": 4.255296512,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14250137600000023
+          "allocated_gb": 16.212877312,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1438167039999989
         },
         {
           "step": 55,
           "sequence_length": 1081,
-          "allocated_gb": 4.255427584,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14263244800000052
+          "allocated_gb": 16.212918272,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14385766399999866
         },
         {
           "step": 56,
           "sequence_length": 1082,
-          "allocated_gb": 4.260793344,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14799820799999974
+          "allocated_gb": 16.21400576,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14494515199999825
         },
         {
           "step": 57,
           "sequence_length": 1083,
-          "allocated_gb": 4.261874688,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1490795519999999
+          "allocated_gb": 16.213594112,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1445335039999982
         },
         {
           "step": 58,
           "sequence_length": 1084,
-          "allocated_gb": 4.261891072,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14909593600000015
+          "allocated_gb": 16.214079488,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14501887999999852
         },
         {
           "step": 59,
           "sequence_length": 1085,
-          "allocated_gb": 4.261907456,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1491123200000004
+          "allocated_gb": 16.214102016,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14504140799999732
         },
         {
           "step": 60,
           "sequence_length": 1086,
-          "allocated_gb": 4.26192384,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14912870399999978
+          "allocated_gb": 16.214124544,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14506393599999967
         },
         {
           "step": 61,
           "sequence_length": 1087,
-          "allocated_gb": 4.260985856,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14819071999999966
+          "allocated_gb": 16.214147072,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14508646399999847
         },
         {
           "step": 62,
           "sequence_length": 1088,
-          "allocated_gb": 4.26197504,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14917990400000036
+          "allocated_gb": 16.2141696,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14510899200000082
         },
         {
           "step": 63,
           "sequence_length": 1089,
-          "allocated_gb": 4.261992448,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14919731200000008
+          "allocated_gb": 16.21524224,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14618163199999756
         },
         {
           "step": 64,
           "sequence_length": 1090,
-          "allocated_gb": 4.262009344,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14921420800000007
+          "allocated_gb": 16.215248896,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1461882879999976
         },
         {
           "step": 65,
           "sequence_length": 1091,
-          "allocated_gb": 4.261145088,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14834995200000023
+          "allocated_gb": 16.215054336,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14599372800000054
         },
         {
           "step": 66,
           "sequence_length": 1092,
-          "allocated_gb": 4.262060544,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14926540799999977
+          "allocated_gb": 16.215293952,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14623334399999877
         },
         {
           "step": 67,
           "sequence_length": 1093,
-          "allocated_gb": 4.262076928,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14928179200000002
+          "allocated_gb": 16.215300096,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14623948799999908
         },
         {
           "step": 68,
           "sequence_length": 1094,
-          "allocated_gb": 4.262093312,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14929817600000028
+          "allocated_gb": 16.21530624,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1462456319999994
         },
         {
           "step": 69,
           "sequence_length": 1095,
-          "allocated_gb": 4.262109696,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14931455999999965
+          "allocated_gb": 16.215312384,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14625177599999972
         },
         {
           "step": 70,
           "sequence_length": 1096,
-          "allocated_gb": 4.2613376,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14854246400000015
+          "allocated_gb": 16.215318528,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14625792000000004
         },
         {
           "step": 71,
           "sequence_length": 1097,
-          "allocated_gb": 4.262160896,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14936576000000024
+          "allocated_gb": 16.215324672,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14626406400000036
         },
         {
           "step": 72,
           "sequence_length": 1098,
-          "allocated_gb": 4.26217728,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1493821440000005
+          "allocated_gb": 16.214429696,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14536908799999892
         },
         {
           "step": 73,
           "sequence_length": 1099,
-          "allocated_gb": 4.262193664,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14939852799999986
+          "allocated_gb": 16.216315904,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14725529599999732
         },
         {
           "step": 74,
           "sequence_length": 1100,
-          "allocated_gb": 4.262210048,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14941491200000012
+          "allocated_gb": 16.215519232,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14645862399999743
         },
         {
           "step": 75,
           "sequence_length": 1101,
-          "allocated_gb": 4.26222848,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1494333440000002
+          "allocated_gb": 16.216475648,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1474150399999985
         },
         {
           "step": 76,
           "sequence_length": 1102,
-          "allocated_gb": 4.26224896,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14945382400000007
+          "allocated_gb": 16.216549376,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14748876799999877
         },
         {
           "step": 77,
           "sequence_length": 1103,
-          "allocated_gb": 4.26226944,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14947430399999995
+          "allocated_gb": 16.215965696,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14690508800000046
         },
         {
           "step": 78,
           "sequence_length": 1104,
-          "allocated_gb": 4.261648896,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14885375999999972
+          "allocated_gb": 16.216715264,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14765465600000027
         },
         {
           "step": 79,
           "sequence_length": 1105,
-          "allocated_gb": 4.262324736,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14952960000000015
+          "allocated_gb": 16.21679104,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14773043199999947
         },
         {
           "step": 80,
           "sequence_length": 1106,
-          "allocated_gb": 4.26234112,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1495459840000004
+          "allocated_gb": 16.216864768,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14780415999999974
         },
         {
           "step": 81,
           "sequence_length": 1107,
-          "allocated_gb": 4.262357504,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14956236799999978
+          "allocated_gb": 16.216938496,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.147877888
         },
         {
           "step": 82,
           "sequence_length": 1108,
-          "allocated_gb": 4.262373888,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14957875200000004
+          "allocated_gb": 16.217018368,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1479577600000006
         },
         {
           "step": 83,
           "sequence_length": 1109,
-          "allocated_gb": 4.26239232,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1495971840000001
+          "allocated_gb": 16.21709824,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14803763199999764
         },
         {
           "step": 84,
           "sequence_length": 1110,
-          "allocated_gb": 4.2624128,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14961766399999998
+          "allocated_gb": 16.217178112,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14811750399999823
         },
         {
           "step": 85,
           "sequence_length": 1111,
-          "allocated_gb": 4.26192128,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14912614400000024
+          "allocated_gb": 16.217257984,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14819737599999883
         },
         {
           "step": 86,
           "sequence_length": 1112,
-          "allocated_gb": 4.262468096,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1496729600000002
+          "allocated_gb": 16.217337856,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14827724799999942
         },
         {
           "step": 87,
           "sequence_length": 1113,
-          "allocated_gb": 4.26248448,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14968934400000045
+          "allocated_gb": 16.216762368,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14770176000000035
         },
         {
           "step": 88,
           "sequence_length": 1114,
-          "allocated_gb": 4.262500864,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.14970572799999982
+          "allocated_gb": 16.217509888,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14844927999999769
         },
         {
           "step": 89,
           "sequence_length": 1115,
-          "allocated_gb": 4.263123456,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15032831999999985
+          "allocated_gb": 16.218632192,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14957158400000026
         },
         {
           "step": 90,
           "sequence_length": 1116,
-          "allocated_gb": 4.263586304,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15079116800000048
+          "allocated_gb": 16.218699776,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1496391680000002
         },
         {
           "step": 91,
           "sequence_length": 1117,
-          "allocated_gb": 4.263592448,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1507973119999999
+          "allocated_gb": 16.21817344,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14911283200000014
         },
         {
           "step": 92,
           "sequence_length": 1118,
-          "allocated_gb": 4.263598592,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15080345600000022
+          "allocated_gb": 16.218845184,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14978457599999828
         },
         {
           "step": 93,
           "sequence_length": 1119,
-          "allocated_gb": 4.263604736,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15080959999999966
+          "allocated_gb": 16.21891072,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1498501119999993
         },
         {
           "step": 94,
           "sequence_length": 1120,
-          "allocated_gb": 4.263264768,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15046963200000008
+          "allocated_gb": 16.218978304,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14991769599999927
         },
         {
           "step": 95,
           "sequence_length": 1121,
-          "allocated_gb": 4.263635456,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15084032000000036
+          "allocated_gb": 16.21904384,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1499832320000003
         },
         {
           "step": 96,
           "sequence_length": 1122,
-          "allocated_gb": 4.2636416,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1508464639999998
+          "allocated_gb": 16.218800128,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14973952000000068
         },
         {
           "step": 97,
           "sequence_length": 1123,
-          "allocated_gb": 4.263647744,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1508526080000001
+          "allocated_gb": 16.219193344,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15013273599999977
         },
         {
           "step": 98,
           "sequence_length": 1124,
-          "allocated_gb": 4.263381504,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15058636799999991
+          "allocated_gb": 16.219260928,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15020031999999972
         },
         {
           "step": 99,
           "sequence_length": 1125,
-          "allocated_gb": 4.263678464,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15088332799999993
+          "allocated_gb": 16.219326464,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15026585600000075
         },
         {
           "step": 100,
           "sequence_length": 1126,
-          "allocated_gb": 4.263684608,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15088947200000025
+          "allocated_gb": 16.219389952,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1503293439999993
         },
         {
           "step": 101,
           "sequence_length": 1127,
-          "allocated_gb": 4.263690752,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15089561599999968
+          "allocated_gb": 16.219457536,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15039692799999926
         },
         {
           "step": 102,
           "sequence_length": 1128,
-          "allocated_gb": 4.263696896,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15090176
+          "allocated_gb": 16.219527168,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15046655999999814
         },
         {
           "step": 103,
           "sequence_length": 1129,
-          "allocated_gb": 4.263522816,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15072768000000014
+          "allocated_gb": 16.2195968,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15053619200000057
         },
         {
           "step": 104,
           "sequence_length": 1130,
-          "allocated_gb": 4.263727616,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1509324799999998
+          "allocated_gb": 16.219666432,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15060582399999944
         },
         {
           "step": 105,
           "sequence_length": 1131,
-          "allocated_gb": 4.26373376,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15093862400000013
+          "allocated_gb": 16.219736064,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15067545599999832
         },
         {
           "step": 106,
           "sequence_length": 1132,
-          "allocated_gb": 4.263739904,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15094476800000045
+          "allocated_gb": 16.219805696,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15074508800000075
         },
         {
           "step": 107,
           "sequence_length": 1133,
-          "allocated_gb": 4.263746048,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15095091199999988
+          "allocated_gb": 16.219015168,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.14995455999999763
         },
         {
           "step": 108,
           "sequence_length": 1134,
-          "allocated_gb": 4.26375424,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.150959104
+          "allocated_gb": 16.219951104,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15089049599999882
         },
         {
           "step": 109,
           "sequence_length": 1135,
-          "allocated_gb": 4.26376448,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15096934399999995
+          "allocated_gb": 16.21971968,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15065907199999984
         },
         {
           "step": 110,
           "sequence_length": 1136,
-          "allocated_gb": 4.26377472,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1509795839999999
+          "allocated_gb": 16.220094464,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15103385599999797
         },
         {
           "step": 111,
           "sequence_length": 1137,
-          "allocated_gb": 4.263752192,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.1509570560000002
+          "allocated_gb": 16.219895808,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1508351999999995
         },
         {
           "step": 112,
           "sequence_length": 1138,
-          "allocated_gb": 4.263809536,
-          "reserved_gb": 5.333057536,
-          "kv_cache_gb": 0.15101440000000022
+          "allocated_gb": 16.220237824,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15117721600000067
         },
         {
           "step": 113,
           "sequence_length": 1139,
-          "allocated_gb": 4.26383616,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.1510410240000004
+          "allocated_gb": 16.220305408,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15124480000000062
         },
         {
           "step": 114,
           "sequence_length": 1140,
-          "allocated_gb": 4.263950848,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.15115571200000044
+          "allocated_gb": 16.220389376,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15132876799999906
         },
         {
           "step": 115,
           "sequence_length": 1141,
-          "allocated_gb": 4.26329344,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.15049830400000008
+          "allocated_gb": 16.220473344,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1514127359999975
         },
         {
           "step": 116,
           "sequence_length": 1142,
-          "allocated_gb": 4.264200704,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.15140556800000038
+          "allocated_gb": 16.220561408,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15150079999999733
         },
         {
           "step": 117,
           "sequence_length": 1143,
-          "allocated_gb": 4.26431744,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.15152230400000022
+          "allocated_gb": 16.220649472,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1515888640000007
         },
         {
           "step": 118,
           "sequence_length": 1144,
-          "allocated_gb": 4.264434176,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.15163904000000006
+          "allocated_gb": 16.222810112,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15374950400000031
         },
         {
           "step": 119,
           "sequence_length": 1145,
-          "allocated_gb": 4.264555008,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.1517598720000004
+          "allocated_gb": 16.223864832,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15480422399999938
         },
         {
           "step": 120,
           "sequence_length": 1146,
-          "allocated_gb": 4.26467584,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.15188070399999987
+          "allocated_gb": 16.223864832,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15480422399999938
         },
         {
           "step": 121,
           "sequence_length": 1147,
-          "allocated_gb": 4.264796672,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.15200153600000021
+          "allocated_gb": 16.223864832,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15480422399999938
         },
         {
           "step": 122,
           "sequence_length": 1148,
-          "allocated_gb": 4.264917504,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.15212236799999967
+          "allocated_gb": 16.223864832,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15480422399999938
         },
         {
           "step": 123,
           "sequence_length": 1149,
-          "allocated_gb": 4.265038336,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.15224320000000002
+          "allocated_gb": 16.223864832,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15480422399999938
         },
         {
           "step": 124,
           "sequence_length": 1150,
-          "allocated_gb": 4.265159168,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.15236403200000037
+          "allocated_gb": 16.222312448,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15325183999999936
         },
         {
           "step": 125,
           "sequence_length": 1151,
-          "allocated_gb": 4.26528,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.15248486399999983
+          "allocated_gb": 16.223901696,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15484108799999774
         },
         {
           "step": 126,
           "sequence_length": 1152,
-          "allocated_gb": 4.265400832,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.15260569600000018
+          "allocated_gb": 16.223901696,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.15484108799999774
         },
         {
           "step": 127,
           "sequence_length": 1153,
-          "allocated_gb": 4.265522688,
-          "reserved_gb": 5.366611968,
-          "kv_cache_gb": 0.152727552
+          "allocated_gb": 16.22390528,
+          "reserved_gb": 16.397631488,
+          "kv_cache_gb": 0.1548446719999994
         }
       ]
     }

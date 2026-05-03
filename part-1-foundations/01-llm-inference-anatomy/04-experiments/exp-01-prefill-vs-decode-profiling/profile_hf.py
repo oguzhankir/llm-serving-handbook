@@ -183,7 +183,15 @@ def measure_decode_latency(
         all_token_timestamps.append([t - token_times[0] for t in token_times])
 
     if not all_tpot_samples:
-        raise RuntimeError("No timing samples collected — check stopping criteria")
+        print(f"  WARNING: No timing samples for prompt_length={prompt_length}, skipping")
+        return DecodeResult(
+            prompt_length=actual_prompt_length,
+            output_length=0,
+            tpot_ms_mean=0.0,
+            tpot_ms_p50=0.0,
+            tpot_ms_p95=0.0,
+            token_timestamps_ms=[],
+        )
 
     sorted_samples = sorted(all_tpot_samples)
     n = len(sorted_samples)
