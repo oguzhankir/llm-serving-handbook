@@ -1,0 +1,47 @@
+{
+  "model": "meta-llama/Llama-3.1-8B",
+  "mode": "offline",
+  "output_length": 64,
+  "timings": [
+    {
+      "prompt_length": 56,
+      "output_length": 64,
+      "ttft_ms": 11.241893838208247,
+      "total_latency_ms": 719.4812056453278,
+      "tpot_ms_mean": 11.241893838208247,
+      "token_timestamps_ms": []
+    },
+    {
+      "prompt_length": 111,
+      "output_length": 64,
+      "ttft_ms": 11.265545332814023,
+      "total_latency_ms": 720.9949013000975,
+      "tpot_ms_mean": 11.265545332814023,
+      "token_timestamps_ms": []
+    },
+    {
+      "prompt_length": 217,
+      "output_length": 64,
+      "ttft_ms": 11.308645312965382,
+      "total_latency_ms": 723.7533000297844,
+      "tpot_ms_mean": 11.308645312965382,
+      "token_timestamps_ms": []
+    },
+    {
+      "prompt_length": 434,
+      "output_length": 64,
+      "ttft_ms": 11.408369024138665,
+      "total_latency_ms": 730.1356175448745,
+      "tpot_ms_mean": 11.408369024138665,
+      "token_timestamps_ms": []
+    },
+    {
+      "prompt_length": 864,
+      "output_length": 64,
+      "ttft_ms": 12.055826463135114,
+      "total_latency_ms": 771.5728936406473,
+      "tpot_ms_mean": 12.055826463135114,
+      "token_timestamps_ms": []
+    }
+  ]
+}

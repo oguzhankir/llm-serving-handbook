@@ -1,3 +1,7 @@
 # 05 — Benchmarks
 
-Raw outputs, configs, and methodology for repeatable runs related to this topic. Keep enough detail that someone else can reproduce the numbers.
+| File | What it covers |
+|---|---|
+| [`methodology.md`](./methodology.md) | How TTFT, TPOT, throughput, and GPU memory are measured. Warmup policy, repetition count, hardware specs. |
+
+Raw JSON results from experiments live in [`numbers/`](./numbers/).
