@@ -30,7 +30,7 @@ topic-name/
 └── 07-references/         — further reading and resources
 ```
 
-**Part-level assets:** In a part folder (e.g. `part-1-foundations/`), diagrams and other binaries live under `assets/<topic-folder>/…`. Match section folder names (e.g. `01-theory/<subtopic>/`). From `topic-name/01-theory/some.md`, reference e.g. `../../assets/01-llm-inference-anatomy/01-theory/overview/figure.png`.
+**Part-level assets:** In a part folder (e.g. `part-1-foundations/`), diagrams and other binaries live under `assets/<topic-folder>/…`. Mirror numbered section and doc names under `01-theory/` (e.g. `01-theory/01-overview/` for `01-overview.md`). From `topic-name/01-theory/01-overview.md`, reference e.g. `../../assets/01-llm-inference-anatomy/01-theory/01-overview/figure.png`.
 
 ---
 

@@ -1,5 +1,7 @@
 # Prefill and Decode
 
+> 📖 Recommended order: You should read this after `02-compute-vs-memory.md`.
+
 This chapter explains the two phases that define almost every LLM serving system:
 
 > **Prefill** processes the prompt.  
@@ -452,4 +454,4 @@ Batching improves throughput, but can hurt latency if scheduling is poor.
 
 The next file goes deeper into the memory structure that makes decode efficient:
 
-[`kv-cache-explained.md`](./kv-cache-explained.md)
+[`04-kv-cache-explained.md`](./04-kv-cache-explained.md)

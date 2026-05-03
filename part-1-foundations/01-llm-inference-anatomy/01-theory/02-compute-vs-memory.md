@@ -1,5 +1,7 @@
 # Compute vs Memory: The Real Bottleneck in LLM Inference
 
+> 📖 Recommended order: You should read this after `01-overview.md`.
+
 This chapter explains one of the most important ideas in LLM systems:
 
 > Why GPUs are not always fully utilized during inference.

@@ -1,5 +1,7 @@
 # KV Cache Explained
 
+> 📖 Recommended order: You should read this after `03-prefill-and-decode.md`.
+
 This chapter explains one of the most important mechanisms in LLM serving:
 
 > The KV cache.

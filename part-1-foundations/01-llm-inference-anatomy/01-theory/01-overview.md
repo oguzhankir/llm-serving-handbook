@@ -1,5 +1,7 @@
 # The Anatomy of LLM Inference
 
+> 📖 Recommended order: Start here — there is no previous file in this series.
+
 This chapter answers one question from a systems perspective:
 
 > What actually happens, step by step, when you send a prompt to an LLM and receive a response back?
@@ -45,7 +47,7 @@ And the full serving view is more detailed still.
 A single inference request follows the lifecycle below.
 
 <p align="center">
-  <img src="../../assets/01-llm-inference-anatomy/01-theory/overview/llm-inference-pipeline.png" alt="End-to-end LLM inference pipeline" width="900">
+  <img src="../../assets/01-llm-inference-anatomy/01-theory/01-overview/llm-inference-pipeline.png" alt="End-to-end LLM inference pipeline" width="900">
 </p>
 
 <p align="center">
@@ -144,7 +146,7 @@ This distinction matters because most serving bottlenecks are not learning bottl
 The most important distinction in this handbook is the difference between **prefill** and **decode**.
 
 <p align="center">
-  <img src="../../assets/01-llm-inference-anatomy/01-theory/overview/prefill-vs-decode.png" alt="Prefill vs Decode" width="900">
+  <img src="../../assets/01-llm-inference-anatomy/01-theory/01-overview/prefill-vs-decode.png" alt="Prefill vs Decode" width="900">
 </p>
 
 <p align="center">
@@ -286,7 +288,7 @@ Many LLM serving optimizations exist because the answer is often different for p
 The KV cache is the mechanism that makes autoregressive decoding practical.
 
 <p align="center">
-  <img src="../../assets/01-llm-inference-anatomy/01-theory/overview/kv-cache-overview.png" alt="KV Cache Overview" width="900">
+  <img src="../../assets/01-llm-inference-anatomy/01-theory/01-overview/kv-cache-overview.png" alt="KV Cache Overview" width="900">
 </p>
 
 <p align="center">
@@ -495,8 +497,8 @@ These questions turn LLM serving from a collection of tricks into a structured s
 
 The next two files make this chapter more concrete:
 
-1. [`prefill-and-decode.md`](./prefill-and-decode.md)
+1. [`03-prefill-and-decode.md`](./03-prefill-and-decode.md)
    A numerical breakdown of prefill and decode.
 
-2. [`kv-cache-explained.md`](./kv-cache-explained.md)
+2. [`04-kv-cache-explained.md`](./04-kv-cache-explained.md)
    A deeper explanation of attention, caching, and memory scaling.
