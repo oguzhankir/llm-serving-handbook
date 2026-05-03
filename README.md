@@ -21,6 +21,7 @@ Each topic follows a consistent format:
 ```
 topic-name/
 ├── README.md              — summary and key takeaways
+├── assets/                — diagrams, figures, screenshots, files referenced from notes
 ├── 01-theory/             — how and why it works
 ├── 02-papers/             — paper summaries and reading notes
 ├── 03-implementations/    — how real engines do it (code reading)
