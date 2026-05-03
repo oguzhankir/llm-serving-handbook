@@ -4,19 +4,96 @@ This chapter answers one question from a systems perspective:
 
 > What actually happens, step by step, when you send a prompt to an LLM and receive a response back?
 
-At a high level, LLM inference is the process of generating an output token sequence from an input prompt using a model whose parameters are already fixed.
+At first, LLM inference looks simple. A user sends text, the model returns text. But inside a production serving system, that request passes through tokenization, GPU execution, KV cache allocation, scheduling, decoding, detokenization, and streaming.
+
+This chapter builds the mental model from the ground up. We start with the simplest view of inference, then gradually move toward the systems constraints that dominate real LLM serving.
+
+---
+
+## 1. The simplest view: text in, text out
+
+The most basic view of inference is this:
 
 <p align="center">
-  <strong>x = (x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub>)</strong><br>
-  <em>input prompt tokens</em>
+  <strong>prompt → model → response</strong>
+</p>
+
+The user provides a prompt, and the model generates a response. For example:
+
+```text
+Prompt:
+Explain why decode is memory-bound in LLM inference.
+
+Response:
+Decode is memory-bound because each generation step must read model weights and cached key/value tensors while producing only a small amount of new computation...
+```
+
+This view is useful, but incomplete. The model does not actually see words or sentences. It sees **tokens**.
+
+So a slightly better view is:
+
+<p align="center">
+  <strong>raw text → tokens → model → output tokens → text</strong>
+</p>
+
+And the full serving view is more detailed still.
+
+---
+
+## 2. The full request lifecycle
+
+A single inference request follows the lifecycle below.
+
+<p align="center">
+  <img src="../../assets/01-llm-inference-anatomy/01-theory/overview/llm-inference-pipeline.png" alt="End-to-end LLM inference pipeline" width="900">
 </p>
 
 <p align="center">
-  <strong>y = (y<sub>1</sub>, y<sub>2</sub>, ..., y<sub>m</sub>)</strong><br>
-  <em>generated output tokens</em>
+  <em>Figure 1. End-to-end lifecycle of an LLM inference request, from raw prompt to streamed response.</em>
 </p>
 
-The model generates the response **autoregressively**. That means it does not produce the whole answer in one shot. It repeatedly predicts the next token, appends that token to the sequence, and then predicts the next one.
+A request moves through these stages:
+
+| Stage                | What happens                        | Why it matters                                                |
+| -------------------- | ----------------------------------- | ------------------------------------------------------------- |
+| Raw prompt           | The user sends text                 | This is the human-facing input                                |
+| Tokenization         | Text becomes token IDs              | The model operates on tokens, not raw text                    |
+| Input token IDs      | Tokens are prepared for the model   | This is the actual model input                                |
+| Prefill              | The prompt is processed in parallel | This builds the initial KV cache and produces the first token |
+| KV cache initialized | Past keys and values are stored     | This makes future decode steps efficient                      |
+| First output token   | The first generated token appears   | This determines time-to-first-token                           |
+| Decode loop          | One token is generated at a time    | This dominates long response generation                       |
+| Detokenization       | Output token IDs become text        | Needed for human-readable output                              |
+| Streamed response    | Text is sent back incrementally     | Improves perceived latency                                    |
+
+A useful high-level mental model is:
+
+> **Prefill** determines how quickly generation can begin.
+> **Decode** determines how quickly the rest of the response arrives.
+
+---
+
+## 3. What inference means mathematically
+
+Let the input prompt be represented as a sequence of tokens:
+
+<p align="center">
+  <strong>x = (x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub>)</strong>
+</p>
+
+Let the generated response be:
+
+<p align="center">
+  <strong>y = (y<sub>1</sub>, y<sub>2</sub>, ..., y<sub>m</sub>)</strong>
+</p>
+
+The model parameters are fixed during inference:
+
+<p align="center">
+  <strong>θ = fixed model weights</strong>
+</p>
+
+A decoder-only LLM generates the response **autoregressively**. This means it predicts one token at a time:
 
 <p align="center">
   <strong>P(y | x) = ∏<sub>t=1</sub><sup>m</sup> P(y<sub>t</sub> | x, y<sub>&lt;t</sub>)</strong>
@@ -24,127 +101,67 @@ The model generates the response **autoregressively**. That means it does not pr
 
 Read this as:
 
-> The probability of the full response is built from many next-token prediction steps.
+> The full response is built from many next-token predictions.
 
-At generation step `t`, the model predicts token `y_t` using both the original prompt `x` and all previously generated tokens `y_<t`.
+At generation step `t`, the model predicts token `y_t` using:
 
-Inference is therefore very different from training. There is no backpropagation, no gradient computation, and no optimizer step. The model weights are frozen. The serving system only performs forward-pass execution over fixed model weights.
+* the original prompt `x`
+* all previously generated tokens `y_<t`
 
-At small scale, inference may look like a simple `model.generate()` call. At production scale, however, inference becomes a systems problem dominated by latency, throughput, batching, GPU memory, memory bandwidth, and KV cache management.
+This is the key reason generation is sequential. The model cannot generate token `y_t` before token `y_(t-1)` exists.
 
 ---
 
-## 1. End-to-end request lifecycle
+## 4. Inference vs. training
 
-The full inference pipeline is shown below.
+Training and inference both run Transformer layers, but they solve different problems.
 
-![End-to-end LLM inference pipeline](../assets/overview/llm-inference-pipeline.png)
+Training updates the model. Inference serves the model.
+
+| Aspect              | Training            | Inference                               |
+| ------------------- | ------------------- | --------------------------------------- |
+| Model weights       | Updated             | Frozen                                  |
+| Backpropagation     | Yes                 | No                                      |
+| Gradients           | Required            | Not used                                |
+| Optimizer state     | Required            | Not used                                |
+| Execution pattern   | Forward + backward  | Forward only                            |
+| Main goal           | Learn parameters    | Generate tokens efficiently             |
+| Main system concern | Training throughput | Latency, throughput, memory, scheduling |
+
+During training, the system must store activations, compute gradients, and update weights. During inference, none of that happens. The model only performs forward passes using fixed weights.
+
+A concise summary:
+
+> Training is about learning model parameters.
+> Inference is about moving tokens through fixed parameters as efficiently as possible.
+
+This distinction matters because most serving bottlenecks are not learning bottlenecks. They are memory, scheduling, and token-generation bottlenecks.
+
+---
+
+## 5. The two phases that define LLM serving
+
+The most important distinction in this handbook is the difference between **prefill** and **decode**.
 
 <p align="center">
-  <em>Figure 1. End-to-end lifecycle of an LLM inference request, from raw prompt to streamed response.</em>
+  <img src="../../assets/01-llm-inference-anatomy/01-theory/overview/prefill-vs-decode.png" alt="Prefill vs Decode" width="900">
 </p>
-
-A request flows through the following stages.
-
-### 1. Raw prompt
-
-The user sends raw text to the serving system.
-
-Example:
-
-```text
-Explain why decode is memory-bound in LLM inference.
-```
-
-### 2. Tokenization
-
-The tokenizer converts raw text into integer token IDs.
-
-If the input text is `s`, tokenization maps it into a discrete sequence:
-
-<p align="center">
-  <strong>s → (x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub>)</strong>
-</p>
-
-The model does not directly operate on characters or words. It operates on token IDs.
-
-### 3. Input token IDs
-
-The token IDs are passed into the model. These tokens form the prompt sequence.
-
-### 4. Prefill
-
-The model processes the entire prompt. During this phase, all prompt tokens are processed together, and the initial KV cache is built.
-
-### 5. KV cache initialized
-
-The model stores key and value tensors for the prompt tokens. These cached tensors will be reused during decoding.
-
-### 6. First output token
-
-After prefill, the model produces the first generated token. This marks the end of the **time-to-first-token**, or **TTFT**, path.
-
-### 7. Decode loop
-
-The model enters the autoregressive generation loop. It repeatedly generates one new token at a time.
-
-### 8. Detokenization
-
-Generated token IDs are converted back into text.
-
-### 9. Streamed response
-
-The generated text is streamed back to the client.
-
-A useful mental model is:
-
-> **Prefill** determines how quickly generation can begin.  
-> **Decode** determines how quickly the rest of the response arrives.
-
----
-
-## 2. Inference vs. training
-
-Training and inference both use Transformer layers, but they are optimized for very different objectives.
-
-| Aspect | Training | Inference |
-|---|---|---|
-| Model weights | Updated | Frozen |
-| Backpropagation | Yes | No |
-| Gradients | Required | Not used |
-| Optimizer state | Required | Not used |
-| Execution pattern | Forward + backward | Forward only |
-| Sequence handling | Highly parallel | Prefill parallel, decode sequential |
-| Main concern | Learning efficiently | Serving efficiently |
-
-A concise summary is:
-
-> Training is about learning model parameters.  
-> Inference is about serving tokens efficiently with fixed parameters.
-
-This distinction matters because most production bottlenecks in LLM serving are not caused by learning. They are caused by repeatedly moving tokens through fixed weights while managing GPU memory and concurrent requests.
-
----
-
-## 3. The two phases that define everything
-
-The most important distinction in LLM serving is the difference between **prefill** and **decode**.
-
-![Prefill vs decode](../assets/overview/prefill-vs-decode.png)
 
 <p align="center">
   <em>Figure 2. Prefill and decode have fundamentally different execution patterns, bottlenecks, and serving implications.</em>
 </p>
 
+Although both phases use the same model weights, they behave very differently.
+
 ---
 
-### 3.1 Prefill
+## 6. Prefill: processing the prompt
 
-During **prefill**, the model processes the entire prompt at once.
+During **prefill**, the model processes the entire input prompt.
 
-If the prompt contains `n` tokens, the model computes hidden states for all `n` prompt positions through the Transformer stack. Because many prompt tokens are processed together, prefill usually gives the GPU enough parallel work to keep its compute units busy.
+If the prompt contains `n` tokens, the model computes hidden states for all `n` prompt positions. This phase is relatively parallel because all prompt tokens are already known.
 
-Inside a self-attention layer, the standard attention operation is:
+Inside a self-attention layer, attention can be written as:
 
 <p align="center">
   <strong>Attention(Q, K, V) = softmax((QK<sup>T</sup>) / √d) V</strong>
@@ -152,24 +169,35 @@ Inside a self-attention layer, the standard attention operation is:
 
 Where:
 
-| Symbol | Meaning |
-|---|---|
-| `Q` | query matrix |
-| `K` | key matrix |
-| `V` | value matrix |
-| `d` | attention head dimension |
-| `K^T` | transpose of the key matrix |
+| Symbol | Meaning                     |
+| ------ | --------------------------- |
+| `Q`    | query matrix                |
+| `K`    | key matrix                  |
+| `V`    | value matrix                |
+| `d`    | attention head dimension    |
+| `K^T`  | transpose of the key matrix |
 
-During prefill, the model computes `Q`, `K`, and `V` for the prompt tokens. The key and value tensors are then stored in the KV cache.
+During prefill, the model computes `Q`, `K`, and `V` for the prompt tokens. The key and value tensors are stored in the KV cache so that future decode steps can reuse them.
 
 Key properties of prefill:
 
-- input: the **entire prompt**
-- execution: all prompt tokens processed together
-- hardware tendency: more **compute-bound**
-- main role: build the initial KV cache
-- output: produces the **first output token**
-- user-facing metric: mainly affects **TTFT**
+| Property          | Prefill                        |
+| ----------------- | ------------------------------ |
+| Input             | Entire prompt                  |
+| Token behavior    | Many tokens processed together |
+| Parallelism       | High across prompt tokens      |
+| Main role         | Build the initial KV cache     |
+| Output            | First generated token          |
+| Main user metric  | TTFT                           |
+| Hardware tendency | More compute-oriented          |
+
+A rough mental model is:
+
+<p align="center">
+  <strong>prefill work ∝ model size × prompt length</strong>
+</p>
+
+Longer prompts usually increase prefill time because more prompt tokens must be processed before the first output token can be produced.
 
 Intuitively:
 
@@ -177,9 +205,9 @@ Intuitively:
 
 ---
 
-### 3.2 Decode
+## 7. Decode: generating the response
 
-After the first token is produced, the model enters the **decode** phase.
+After prefill produces the first output token, the model enters the **decode** phase.
 
 At decode step `t`, the model predicts:
 
@@ -187,14 +215,9 @@ At decode step `t`, the model predicts:
   <strong>P(y<sub>t</sub> | x, y<sub>&lt;t</sub>)</strong>
 </p>
 
-This means the next token `y_t` is generated using:
+That means the next token depends on the original prompt and all previously generated tokens.
 
-- the original prompt `x`
-- all previously generated tokens `y_<t`
-
-Unlike prefill, decode is sequential across time. The model cannot generate `y_t` before it has generated `y_(t-1)`.
-
-A simplified decode loop is:
+A simplified decode step is:
 
 <p align="center">
   <strong>y<sub>t</sub> ~ P(next token | x, y<sub>1</sub>, y<sub>2</sub>, ..., y<sub>t-1</sub>)</strong>
@@ -206,88 +229,80 @@ Then the generated token is appended to the sequence:
   <strong>(y<sub>1</sub>, ..., y<sub>t-1</sub>) → (y<sub>1</sub>, ..., y<sub>t-1</sub>, y<sub>t</sub>)</strong>
 </p>
 
+The loop repeats until the model emits a stop token, reaches a maximum output length, or the server stops generation.
+
 Key properties of decode:
 
-- input: previous token + KV cache
-- execution: one token generated at a time
-- hardware tendency: more **memory-bandwidth-bound**
-- main role: read and extend the KV cache
-- output: produces subsequent output tokens
-- user-facing metric: mainly affects **TPOT / ITL**
+| Property          | Decode                            |
+| ----------------- | --------------------------------- |
+| Input             | Previous token + KV cache         |
+| Token behavior    | One token generated at a time     |
+| Parallelism       | Sequential across generation time |
+| Main role         | Read and extend the KV cache      |
+| Output            | Subsequent generated tokens       |
+| Main user metric  | TPOT / ITL                        |
+| Hardware tendency | More memory-bandwidth-oriented    |
 
-A simple way to think about it is:
+A useful comparison:
 
-> Prefill processes a whole prompt.  
-> Decode repeats a small forward step many times.
+> Prefill processes a whole prompt once.
+> Decode repeats a smaller step many times.
 
 ---
 
-## 4. Why prefill and decode behave differently
+## 8. Why decode is often memory-bound
 
-Although prefill and decode use the same model weights, they stress the hardware differently.
+A GPU has enormous compute capability, but computation is only useful if data arrives fast enough.
 
-### Prefill is more compute-oriented
+During decode, each step produces only one new token per sequence, but the system still has to repeatedly access:
 
-In prefill, many tokens are processed together. This gives the GPU a large amount of parallel work. The computation looks more like matrix-matrix multiplication, which can use GPU compute units efficiently.
+* model weights
+* cached keys and values
+* intermediate activations
 
 A rough mental model is:
 
 <p align="center">
-  <strong>Prefill work ∝ model size × prompt length</strong>
+  <strong>decode cost per token ≈ weight reads + KV cache reads + small compute step</strong>
 </p>
 
-As prompt length increases, prefill work increases because more input tokens must be processed.
+This is why decode is often limited by memory bandwidth rather than raw FLOPs.
 
-### Decode is more memory-oriented
+The important systems question is:
 
-In decode, the model generates only one token per step for each sequence. The amount of computation per step is smaller, but the system still has to repeatedly access:
+> Is this phase waiting for compute, or waiting for memory movement?
 
-- model weights
-- the relevant KV cache
+Many LLM serving optimizations exist because the answer is often different for prefill and decode.
 
-A rough mental model is:
-
-<p align="center">
-  <strong>Decode cost per token ≈ weight reads + KV cache reads + small compute step</strong>
-</p>
-
-This is why decode often becomes limited not by peak FLOPs, but by memory bandwidth.
-
-The key systems question is:
-
-> Is the bottleneck compute, or memory movement?
-
-That single question explains why many LLM serving optimizations exist.
+| Phase   | Common bottleneck  | Intuition                                          |
+| ------- | ------------------ | -------------------------------------------------- |
+| Prefill | Compute throughput | Many tokens create large matrix operations         |
+| Decode  | Memory bandwidth   | Each step reads a lot of data to produce one token |
 
 ---
 
-## 5. KV cache: the central serving primitive
+## 9. KV cache: the central serving primitive
 
-The KV cache is the core mechanism that makes autoregressive generation efficient.
+The KV cache is the mechanism that makes autoregressive decoding practical.
 
-![KV cache overview](../assets/overview/kv-cache-overview.png)
+<p align="center">
+  <img src="../../assets/01-llm-inference-anatomy/01-theory/overview/kv-cache-overview.png" alt="KV Cache Overview" width="900">
+</p>
 
 <p align="center">
   <em>Figure 3. The KV cache stores past keys and values so that decode can reuse them instead of recomputing them from scratch.</em>
 </p>
 
----
+Without a KV cache, every new decode step would need to recompute keys and values for all previous tokens. That would be extremely inefficient.
 
-### 5.1 What problem does the KV cache solve?
-
-Without a KV cache, every new decode step would require recomputing keys and values for all previous tokens.
-
-That would be extremely inefficient.
-
-Instead, the model stores the **key** and **value** tensors from previous tokens and reuses them at future steps.
+Instead, the model stores previous keys and values once, then reuses them at future decode steps.
 
 At decode step `t`:
 
-1. a new query `q_t` is computed for the current token
-2. the model attends over cached past keys and values
-3. the new `K_t` and `V_t` are appended to the cache
-
-This turns repeated recomputation into incremental reuse.
+1. compute a new query `q_t` for the current token
+2. attend over cached past keys and values
+3. compute new `K_t` and `V_t`
+4. append `K_t` and `V_t` to the cache
 
 The basic trade-off is:
 
@@ -295,9 +310,9 @@ The basic trade-off is:
 
 ---
 
-### 5.2 Conceptual decode step
+## 10. Conceptual KV cache math
 
-At a high level, decode step `t` computes a query, key, and value for the current token:
+At a high level, the current token representation `x_t` is projected into query, key, and value vectors:
 
 <p align="center">
   <strong>q<sub>t</sub> = x<sub>t</sub>W<sub>Q</sub></strong><br>
@@ -305,13 +320,13 @@ At a high level, decode step `t` computes a query, key, and value for the curren
   <strong>V<sub>t</sub> = x<sub>t</sub>W<sub>V</sub></strong>
 </p>
 
-The new query `q_t` attends over the cached keys and values:
+The new query attends over cached keys and values:
 
 <p align="center">
   <strong>Attention(q<sub>t</sub>, K<sub>≤t</sub>, V<sub>≤t</sub>) = softmax((q<sub>t</sub>K<sub>≤t</sub><sup>T</sup>) / √d) V<sub>≤t</sub></strong>
 </p>
 
-Then the newly computed `K_t` and `V_t` are appended to the cache:
+After the step finishes, the new key and value are appended:
 
 <p align="center">
   <strong>K<sub>≤t</sub> = [K<sub>&lt;t</sub> ; K<sub>t</sub>]</strong><br>
@@ -320,13 +335,13 @@ Then the newly computed `K_t` and `V_t` are appended to the cache:
 
 The semicolon means concatenation along the sequence dimension.
 
-This is the operational meaning of the KV cache:
+The operational meaning is simple:
 
 > Store the past once, then reuse it at every future decode step.
 
 ---
 
-### 5.3 KV cache size formula
+## 11. KV cache memory growth
 
 The KV cache introduces one of the most important memory pressures in LLM serving.
 
@@ -338,24 +353,24 @@ A standard size formula is:
 
 Where:
 
-| Symbol | Meaning |
-|---|---|
-| `L` | number of Transformer layers |
-| `H_kv` | number of KV heads |
-| `d_head` | dimension of each attention head |
-| `T` | sequence length |
-| `b` | bytes per element |
-| `2` | one tensor for keys and one tensor for values |
+| Symbol   | Meaning                                       |
+| -------- | --------------------------------------------- |
+| `L`      | number of Transformer layers                  |
+| `H_kv`   | number of KV heads                            |
+| `d_head` | dimension of each attention head              |
+| `T`      | sequence length                               |
+| `b`      | bytes per element                             |
+| `2`      | one tensor for keys and one tensor for values |
 
-This formula reveals the main scaling behavior:
+This formula shows the most important scaling rule:
 
 <p align="center">
   <strong>KV cache size ∝ T</strong>
 </p>
 
-So as sequence length grows, KV cache memory grows linearly.
+As sequence length grows, KV cache memory grows linearly.
 
-For a single request, longer context means a larger cache. For a serving system, the total KV cache footprint also scales with the number of active requests:
+For a serving system, total KV memory also grows with the number of active requests:
 
 <p align="center">
   <strong>Total KV memory ≈ Σ<sub>r=1</sub><sup>R</sup> KV memory of request r</strong>
@@ -363,42 +378,38 @@ For a single request, longer context means a larger cache. For a serving system,
 
 Here, `R` is the number of active requests.
 
-This is one of the main reasons LLM serving is hard: even if the model weights fit on the GPU, the active KV caches may become the real memory bottleneck.
+This is one of the main reasons LLM serving is hard. Even if the model weights fit on the GPU, the active KV caches may become the real memory bottleneck.
 
 ---
 
-## 6. The two serving personas: latency and throughput
+## 12. Latency: TTFT and TPOT
 
-Any serving system must balance two competing goals.
+From a user's perspective, latency is not one number. Two metrics matter most.
 
-### Latency
+| Metric     | Full name                                   | Meaning                                        | Mainly affected by              |
+| ---------- | ------------------------------------------- | ---------------------------------------------- | ------------------------------- |
+| TTFT       | Time to first token                         | How long until generation starts               | queueing, tokenization, prefill |
+| TPOT / ITL | Time per output token / inter-token latency | How fast tokens arrive after generation starts | decode                          |
 
-Latency measures how fast the system responds to an individual user.
-
-The two most important latency metrics are:
-
-| Metric | Meaning | Mainly affected by |
-|---|---|---|
-| TTFT | Time to first token | queueing + tokenization + prefill |
-| TPOT / ITL | Time per output token / inter-token latency | decode |
-
-A simplified view is:
+A simplified latency decomposition is:
 
 <p align="center">
   <strong>TTFT ≈ queue time + tokenization time + prefill time</strong>
 </p>
 
-For the full response, total generation time can be approximated as:
+For a response with `m` generated tokens:
 
 <p align="center">
-  <strong>Total latency ≈ TTFT + m × TPOT</strong>
+  <strong>total latency ≈ TTFT + m × TPOT</strong>
 </p>
 
-Where `m` is the number of generated output tokens.
+This explains why both phases matter. A system with slow prefill feels unresponsive. A system with slow decode feels sluggish during long answers.
 
-### Throughput
+---
 
-Throughput measures how much total work the system completes over time.
+## 13. Throughput: the system-level view
+
+Throughput measures how much work the serving system completes over time.
 
 Common throughput metrics include:
 
@@ -406,82 +417,77 @@ Common throughput metrics include:
   <strong>tokens/sec = total generated tokens / wall-clock time</strong>
 </p>
 
-and:
-
 <p align="center">
   <strong>requests/sec = completed requests / wall-clock time</strong>
 </p>
 
 Latency and throughput are often in tension:
 
-> Low latency prefers immediate execution.  
-> High throughput prefers larger or smarter batching.
+> Low latency prefers immediate execution.
+> High throughput prefers batching and high GPU utilization.
 
-That trade-off is a major theme in LLM serving systems.
+This trade-off is why LLM serving engines need scheduling logic. They are not just running a model. They are deciding which requests should run, when they should run, and how GPU memory should be shared.
 
 ---
 
-## 7. Why batching is non-trivial
+## 14. Why batching is non-trivial
 
-Batching sounds simple in theory: combine requests and run them together.
+Batching sounds simple: combine requests and run them together.
 
 In practice, LLM serving is harder because:
 
-- prompt lengths differ
-- output lengths differ
-- requests arrive continuously
-- some sequences finish early
-- new sequences arrive while older ones are still decoding
+* prompt lengths differ
+* output lengths differ
+* requests arrive continuously
+* some sequences finish early
+* new sequences arrive while older ones are still decoding
+* KV cache memory grows dynamically
 
-Naive batching can waste GPU capacity because finished requests leave empty slots, while new requests may be forced to wait.
+Naive static batching wastes capacity. Finished requests leave empty slots, while new requests may be forced to wait.
 
-Modern engines therefore need sophisticated schedulers rather than static batching.
+Modern inference engines therefore use more advanced scheduling and memory management techniques, such as:
 
-This is why later topics in the handbook matter:
+* continuous batching
+* paged KV cache allocation
+* chunked prefill
+* prefix caching
+* KV cache quantization
 
-- continuous batching
-- paged attention
-- chunked prefill
-- prefix caching
-- KV cache quantization
+Each of these techniques becomes easier to understand once the prefill/decode/KV-cache mental model is clear.
 
 ---
 
-## 8. A compact mental model
+## 15. The core mental checklist
 
-When reading about any serving optimization, ask:
+When reading about any LLM serving optimization, ask these questions:
 
-1. Does it target **prefill** or **decode**?
+1. Does it target **prefill**, **decode**, or both?
 2. Does it reduce **compute**, **memory movement**, or **memory footprint**?
 3. Does it improve **TTFT**, **TPOT**, or **throughput**?
-4. Does it affect the **KV cache**?
-5. Does it help with **batching and scheduling**?
+4. Does it change how the **KV cache** is stored or accessed?
+5. Does it improve **batching** or **scheduling**?
+6. Does it preserve model quality?
+7. Does it increase implementation complexity?
 
-Those five questions are enough to organize most of the field.
+These questions turn LLM serving from a collection of tricks into a structured systems problem.
 
 ---
 
-## 9. Key takeaways
+## 16. Key takeaways
 
-- LLM inference is forward-only execution with frozen weights.
-- Generation is autoregressive:
-
-<p align="center">
-  <strong>P(y | x) = ∏<sub>t=1</sub><sup>m</sup> P(y<sub>t</sub> | x, y<sub>&lt;t</sub>)</strong>
-</p>
-
-- Prefill processes the prompt and usually behaves more like a compute-heavy phase.
-- Decode generates tokens one by one and is often more memory-bandwidth-sensitive.
-- The KV cache avoids recomputation and makes decoding efficient.
-- KV cache memory grows with sequence length:
-
-<p align="center">
-  <strong>KV cache size ∝ T</strong>
-</p>
-
-- TTFT is strongly shaped by prefill.
-- TPOT is strongly shaped by decode.
-- Production LLM serving is fundamentally a systems problem, not just a modeling problem.
+* LLM inference is forward-only execution with frozen weights.
+* The model operates on tokens, not raw text.
+* Decoder-only LLMs generate autoregressively.
+* Prefill processes the prompt and builds the initial KV cache.
+* Decode generates one token at a time.
+* Prefill is usually more compute-oriented.
+* Decode is often more memory-bandwidth-oriented.
+* The KV cache avoids recomputation but consumes GPU memory.
+* KV cache memory grows with sequence length and active requests.
+* TTFT is strongly shaped by prefill.
+* TPOT is strongly shaped by decode.
+* Throughput depends heavily on batching, scheduling, and memory management.
+* Production LLM serving is a systems problem, not just a modeling problem.
 
 ---
 
@@ -489,8 +495,8 @@ Those five questions are enough to organize most of the field.
 
 The next two files make this chapter more concrete:
 
-1. [`prefill-and-decode.md`](./prefill-and-decode.md)  
-   A numerical breakdown of the two phases.
+1. [`prefill-and-decode.md`](./prefill-and-decode.md)
+   A numerical breakdown of prefill and decode.
 
-2. [`kv-cache-explained.md`](./kv-cache-explained.md)  
+2. [`kv-cache-explained.md`](./kv-cache-explained.md)
    A deeper explanation of attention, caching, and memory scaling.

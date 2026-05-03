@@ -21,7 +21,6 @@ Each topic follows a consistent format:
 ```
 topic-name/
 ├── README.md              — summary and key takeaways
-├── assets/                — diagrams, figures, screenshots, files referenced from notes
 ├── 01-theory/             — how and why it works
 ├── 02-papers/             — paper summaries and reading notes
 ├── 03-implementations/    — how real engines do it (code reading)
@@ -30,6 +29,8 @@ topic-name/
 ├── 06-decision-guides/    — when to use, trade-offs, failure modes
 └── 07-references/         — further reading and resources
 ```
+
+**Part-level assets:** In a part folder (e.g. `part-1-foundations/`), diagrams and other binaries live under `assets/<topic-folder>/…`. Match section folder names (e.g. `01-theory/<subtopic>/`). From `topic-name/01-theory/some.md`, reference e.g. `../../assets/01-llm-inference-anatomy/01-theory/overview/figure.png`.
 
 ---
 
