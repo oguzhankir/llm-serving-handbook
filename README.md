@@ -40,8 +40,8 @@ topic-name/
 
 | # | Topic | Status |
 |---|-------|--------|
-| 01 | The Anatomy of LLM Inference | 🚧 In Progress |
-| 02 | GPU Architecture for LLM Engineers | 📋 Planned |
+| 01 | The Anatomy of LLM Inference | ✅ Done |
+| 02 | GPU Architecture for LLM Engineers | 🚧 In Progress |
 | 03 | Memory-Bound vs Compute-Bound | 📋 Planned |
 | 04 | Numerical Precision | 📋 Planned |
 | 05 | Attention Mechanisms for Serving | 📋 Planned |
